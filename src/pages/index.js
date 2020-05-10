@@ -15,6 +15,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/caligrafik">Caligrafik : Design from <a href="">@Calin Balea</a></Link>
+    <Link to="/louvre">Theodore Géricault - Le Louvre : Design from <a href="">@Adrien Louis Constant</a></Link>
   </Layout>
 )
 

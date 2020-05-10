@@ -10,4 +10,11 @@ const caligrafik = {
   },
 };
 
-export { caligrafik };
+const louvre = {
+  fontFamily: {
+    title: "'Nanum Myeongjo', serif",
+    text: "'Montserrat', sans-serif",
+  }
+}
+
+export { caligrafik, louvre };
