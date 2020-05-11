@@ -34,6 +34,7 @@ const StyledCredits = styled.div`
     justify-content: space-between;
     width: 25%;
     background-image: url(${bird2});
+    background-size: cover;
     background-position: center;
     padding: 1em;
     .time {
