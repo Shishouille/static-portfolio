@@ -56,7 +56,7 @@ const StyledMain = styled.main`
         width: 0;
         height: 0;
         bottom: -38%;
-        right: -4%;
+        right: -2%;
         border-style: solid;
         border-width: 10px 25px 0 0;
         border-color: #000000 transparent transparent transparent;

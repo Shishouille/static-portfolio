@@ -17,4 +17,16 @@ const louvre = {
   }
 }
 
-export { caligrafik, louvre };
+const beatrizRamo = {
+  color: {
+    bg: '#FEFEFE',
+    primary: '#0C4BB8',
+    secondary: '#B5D9FA',
+  },
+  fontFamily: {
+    title: "'Gotu', sans-serif",
+    text: "'Asap', sans-serif",
+  }
+}
+
+export { caligrafik, louvre, beatrizRamo };
