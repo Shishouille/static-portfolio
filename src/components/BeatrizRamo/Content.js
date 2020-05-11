@@ -11,6 +11,13 @@ const StyledContent = styled.div`
   h1 {
     font-family: ${theme.fontFamily.title};
     text-transform: uppercase;
+    font-size: 3em;
+    font-weight: normal;
+  }
+  p {
+    font-size: .8em;
+    width: 65%;
+    text-align: justify;
   }
 `;
 

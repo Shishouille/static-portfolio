@@ -29,4 +29,16 @@ const beatrizRamo = {
   }
 }
 
-export { caligrafik, louvre, beatrizRamo };
+const nightingale = {
+  color: {
+    bgTop: '#EEEEEE',
+    bgBottom: '#FAFAFA',
+    bgRight: '#D7593A',
+  },
+  fontFamily: {
+    title: "'Playfair Display', serif",
+    text: "'Montserrat', sans-serif",
+  }
+}
+
+export { caligrafik, louvre, beatrizRamo, nightingale };

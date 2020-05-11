@@ -988,6 +988,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/icons-ant-design@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-ant-design/-/icons-ant-design-1.0.8.tgz#7cea4ea3a0467096dcba2ba050c72fe14fefe04f"
+  integrity sha512-tbmrVdJfIwgQuEFiV2aqMwgbjYT24ROLFoy6cXv+ZVL8KpkfKOPyUCs324w3EBn9NiL9M+AKNVSNbcydJq9jNg==
+
 "@iconify/icons-bi@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/icons-bi/-/icons-bi-1.0.0.tgz#a0d269b32f8e4ff29c28b5b861743a7ced330099"
@@ -1012,6 +1017,16 @@
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@iconify/icons-dashicons/-/icons-dashicons-1.0.9.tgz#9e7b793ee1845a00599d31117afbbaac097ad06b"
   integrity sha512-GtHuLxtf6hAZzuruMbNaj55LKW0VMqoD4IWLnxNw4GF9DTu/HowdapTIMb4qan/tjej3+AGyWbxn2stJXfJiSg==
+
+"@iconify/icons-entypo@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-entypo/-/icons-entypo-1.0.5.tgz#0bb236da8fa5979adbbf713761fea34742f2daf8"
+  integrity sha512-MU+WosE4wWPiUqL9rhFBKzuopQW0KieNdEIaVr/hRP2ApBzAGct1gQqeIW+oH0/TLo0unRErt4meYeyNsT6NOg==
+
+"@iconify/icons-ic@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-ic/-/icons-ic-1.0.11.tgz#73cd387ae1da39c38134fdabc96db44e48d37268"
+  integrity sha512-9zWp0PTlPNtYnOQjHa8R22UA9U/Lt4j3D+ojD5NONkvbprCEr056iKWiuBJnyrIvLUa7FxKK2K8dbq7CuXm4rA==
 
 "@iconify/icons-ion@^1.0.12":
   version "1.0.12"
