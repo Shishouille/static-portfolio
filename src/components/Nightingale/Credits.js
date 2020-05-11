@@ -1,12 +1,11 @@
-import React from 'react'
-import styled from "styled-components";
-import { nightingale as theme } from '../../themes';
+import React from "react"
+import styled from "styled-components"
+import { nightingale as theme } from "../../themes"
 
-import { InlineIcon } from '@iconify/react';
-import controlsPlay from '@iconify/icons-dashicons/controls-play';
+import { InlineIcon } from "@iconify/react"
+import controlsPlay from "@iconify/icons-dashicons/controls-play"
 
-
-import bird2 from '../../images/nightingale/bird2.png';
+import bird2 from "../../images/nightingale/bird2.png"
 
 const StyledCredits = styled.div`
   display: flex;
@@ -18,12 +17,12 @@ const StyledCredits = styled.div`
     display: flex;
     justify-content: space-around;
     border-top-left-radius: 1em;
-    font-size: .8em;
+    font-size: 0.8em;
     .credit-title {
       margin-top: 2em;
       text-transform: uppercase;
       font-weight: bold;
-      margin-bottom: .1em;
+      margin-bottom: 0.1em;
     }
     .credit-name {
     }
@@ -62,14 +61,14 @@ const StyledCredits = styled.div`
         align-items: center;
         justify-content: center;
         svg {
-        margin-left: .2em;
+          margin-left: 0.2em;
         }
       }
     }
   }
   @media (max-width: 768px) {
     flex-direction: column;
-    height:50%;
+    height: 50%;
     .credits {
       width: 100%;
       height: 50%;
@@ -80,7 +79,7 @@ const StyledCredits = styled.div`
       background-size: cover;
     }
   }
-`;
+`
 
 const Credits = () => {
   return (

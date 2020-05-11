@@ -1,12 +1,12 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
+import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-import styled from "styled-components";
-import { louvre as theme } from '../themes';
+import styled from "styled-components"
+import { louvre as theme } from "../themes"
 
-import Content from '../../src/components/Louvre/Content';
-import Painting from '../../src/components/Louvre/Painting';
+import Content from "../../src/components/Louvre/Content"
+import Painting from "../../src/components/Louvre/Painting"
 
 const StyledWrapper = styled.div`
   font-family: ${theme.fontFamily.text};
@@ -22,26 +22,29 @@ const StyledWrapper = styled.div`
     justify-content: space-between;
     max-height: 100vh;
   }
-`;
+`
 
 const Louvre = ({ data }) => {
-  return(
-  <>
-    <Helmet> 
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet" />
-    </Helmet>
-    <StyledWrapper>
+  return (
+    <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Myeongjo:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
+      <StyledWrapper>
         <Content />
         <Painting fluid={data.file.childImageSharp.fluid} />
-    </StyledWrapper>
-  </>
-);};
-
+      </StyledWrapper>
+    </>
+  )
+}
 
 export const query = graphql`
   query {
-      file(relativePath: {eq: "louvre/rdlm.jpg"}) {
-        childImageSharp {
+    file(relativePath: { eq: "louvre/rdlm.jpg" }) {
+      childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid
           ...GatsbyImageSharpFluidLimitPresentationSize
@@ -51,4 +54,4 @@ export const query = graphql`
   }
 `
 
-export default Louvre;
+export default Louvre

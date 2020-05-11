@@ -1,10 +1,10 @@
-import React from 'react';
-import { useMediaQuery } from 'react-responsive';
-import styled from "styled-components";
-import { louvre as theme } from '../../themes';
+import React from "react"
+import { useMediaQuery } from "react-responsive"
+import styled from "styled-components"
+import { louvre as theme } from "../../themes"
 
-import rdlm from '../../images/louvre/rdlm.jpg';
-import Img from "gatsby-image";
+import rdlm from "../../images/louvre/rdlm.jpg"
+import Img from "gatsby-image"
 
 const StyledPainting = styled.div`
   @media (min-width: 1024px) {
@@ -18,16 +18,20 @@ const StyledPainting = styled.div`
       height: auto;
     }
   }
-`;
+`
 
 const Painting = ({ fluid }) => {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1024px)' });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" })
   return (
     <>
-      {isBigScreen && <StyledPainting><Img className="painting" fluid={fluid} /></StyledPainting>}
+      {isBigScreen && (
+        <StyledPainting>
+          <Img className="painting" fluid={fluid} />
+        </StyledPainting>
+      )}
       {!isBigScreen && <img id="painting" src={rdlm} />}
     </>
   )
 }
 
-export default Painting;
+export default Painting

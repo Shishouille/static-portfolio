@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react"
 
-import styled from "styled-components";
-import { beatrizRamo as theme } from '../../themes';
+import styled from "styled-components"
+import { beatrizRamo as theme } from "../../themes"
 
-const StyledNav = styled.nav `
+const StyledNav = styled.nav`
   text-align: center;
   a {
     all: unset;
-    margin-left: .7em;
+    margin-left: 0.7em;
   }
-  .logo  {
+  .logo {
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
   }
   @media (min-width: 768px) {
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
@@ -26,11 +26,11 @@ const StyledNav = styled.nav `
         text-align: center;
         display: inline-block;
         width: 50%;
-        padding: .4em;
+        padding: 0.4em;
       }
     }
   }
-`;
+`
 
 const Navigation = () => {
   return (

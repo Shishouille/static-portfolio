@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from "styled-components";
-import { useMediaQuery } from 'react-responsive';
-import { louvre as theme } from '../../themes';
+import React from "react"
+import styled from "styled-components"
+import { useMediaQuery } from "react-responsive"
+import { louvre as theme } from "../../themes"
 
-import { Icon } from '@iconify/react';
-import alignCenter from '@iconify/icons-jam/align-center';
+import { Icon } from "@iconify/react"
+import alignCenter from "@iconify/icons-jam/align-center"
 
-import logo from '../../images/louvre/logo.png';
-import gericault from '../../images/louvre/gericault.svg';
+import logo from "../../images/louvre/logo.png"
+import gericault from "../../images/louvre/gericault.svg"
 
 const StyledMain = styled.main`
   display: flex;
@@ -42,7 +42,7 @@ const StyledMain = styled.main`
       width: 90%;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: .8em;
+      font-size: 0.8em;
       &::before {
         content: " ";
         position: absolute;
@@ -75,19 +75,19 @@ const StyledMain = styled.main`
       left: 4em;
     }
     h1 {
-    display: block;
-    visibility: hidden;
-    font-size: 5em;
-    margin-bottom: 2em;
+      display: block;
+      visibility: hidden;
+      font-size: 5em;
+      margin-bottom: 2em;
     }
     article {
       width: 70%;
     }
   }
-`;
+`
 
 const Content = () => {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1024px)' });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" })
   return (
     <StyledMain>
       <div className="nav">
@@ -95,27 +95,32 @@ const Content = () => {
       </div>
       <div>
         <div className="logo">
-          <img src={logo} alt=""/>
+          <img src={logo} alt="" />
         </div>
         <div>
-          {isBigScreen && <img className="title" src={gericault} alt=""/>}
+          {isBigScreen && <img className="title" src={gericault} alt="" />}
           <h1>Theodore Gericault</h1>
           <legend>Rouen, 1791 - Paris, 1824</legend>
         </div>
         <article>
           <p>
-            Incarnation de l'artiste romantique, il a eu une vie courte et tourmentée, qui a donné naissance à de nombreux mythes. Son oeuvre la plus célèbre est le Radeau de la Méduse (1818-1819).
+            Incarnation de l'artiste romantique, il a eu une vie courte et
+            tourmentée, qui a donné naissance à de nombreux mythes. Son oeuvre
+            la plus célèbre est le Radeau de la Méduse (1818-1819).
           </p>
           <p>
-            Il est également connu pour sa passion pour les chevaux, à l'écurie ou en action sur les champs de bataille napoléoniens, outre ses peintures à l'huile, Géricault réalise des lithographies, des sculptures, rares mais remarquables, et des centaines de dessins.
+            Il est également connu pour sa passion pour les chevaux, à l'écurie
+            ou en action sur les champs de bataille napoléoniens, outre ses
+            peintures à l'huile, Géricault réalise des lithographies, des
+            sculptures, rares mais remarquables, et des centaines de dessins.
           </p>
         </article>
         <footer>
-          <p>En savoir plus</p> 
+          <p>En savoir plus</p>
         </footer>
       </div>
     </StyledMain>
   )
 }
 
-export default Content;
+export default Content

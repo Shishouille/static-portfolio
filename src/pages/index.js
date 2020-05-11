@@ -14,10 +14,19 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/caligrafik">Caligrafik : Design from <a href="">@Calin Balea</a></Link>
-    <Link to="/louvre">Theodore Géricault - Le Louvre : Design from <a href="">@Adrien Louis Constant</a></Link>
-    <Link to="/beatriz-ramo">Beatriz Ramo Portfolio <a href="">@Anastasia</a></Link>
-    <Link to="/nightingale">The song of the nightingales <a href="">@Thomas Monavon</a></Link>
+    <Link to="/caligrafik">
+      Caligrafik : Design from <a href="">@Calin Balea</a>
+    </Link>
+    <Link to="/louvre">
+      Theodore Géricault - Le Louvre : Design from{" "}
+      <a href="">@Adrien Louis Constant</a>
+    </Link>
+    <Link to="/beatriz-ramo">
+      Beatriz Ramo Portfolio <a href="">@Anastasia</a>
+    </Link>
+    <Link to="/nightingale">
+      The song of the nightingales <a href="">@Thomas Monavon</a>
+    </Link>
   </Layout>
 )
 

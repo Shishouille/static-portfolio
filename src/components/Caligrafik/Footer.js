@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react"
 
-import styled from "styled-components";
-import { caligrafik as theme } from '../../themes';
+import styled from "styled-components"
+import { caligrafik as theme } from "../../themes"
 
-import { Icon } from '@iconify/react';
-import arrowDownAlt2 from '@iconify/icons-dashicons/arrow-down-alt2';
-
-
+import { Icon } from "@iconify/react"
+import arrowDownAlt2 from "@iconify/icons-dashicons/arrow-down-alt2"
 
 const StyledFooter = styled.footer`
-  h5, li {
+  h5,
+  li {
     font-family: ${theme.fontFamily.text};
   }
   h5 {
@@ -31,7 +30,7 @@ const StyledFooter = styled.footer`
     padding: 1em 0;
   }
   background-color: ${theme.color.primary};
-  @media (min-width: 768px) { 
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-evenly;
     text-align: start;
@@ -58,9 +57,7 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <div className="caligrafik">
-        caligrafik.
-      </div>
+      <div className="caligrafik">caligrafik.</div>
       <div>
         <h5>Useful</h5>
         <ul>
@@ -82,11 +79,15 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h5>USD <Icon icon={arrowDownAlt2} color="black" /></h5>
-        <h5>inches <Icon icon={arrowDownAlt2} color="black" /></h5>
+        <h5>
+          USD <Icon icon={arrowDownAlt2} color="black" />
+        </h5>
+        <h5>
+          inches <Icon icon={arrowDownAlt2} color="black" />
+        </h5>
       </div>
     </StyledFooter>
   )
 }
 
-export default Footer;
+export default Footer

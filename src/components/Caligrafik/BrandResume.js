@@ -1,11 +1,12 @@
-import React from 'react'
-import styled from "styled-components";
-import { caligrafik as theme } from '../../themes';
+import React from "react"
+import styled from "styled-components"
+import { caligrafik as theme } from "../../themes"
 
 const StyledBrandResume = styled.article`
-  margin-left: .5em;
+  margin-left: 0.5em;
   margin-top: 1em;
-  h5, p {
+  h5,
+  p {
     font-family: ${theme.fontFamily.text};
     font-weight: normal;
   }
@@ -22,15 +23,19 @@ const StyledBrandResume = styled.article`
       margin-bottom: 1em;
     }
   }
-`;
+`
 const BrandResume = () => {
   return (
     <StyledBrandResume>
       <h5>Who we are</h5>
       <h2>We are Caligrafik, an illustration agency with a different spin.</h2>
-      <p>We work with talented artists around the world and top-tier printing companies to make custom digital artwork, printed on fine art materials, affordable and convenient.</p>
+      <p>
+        We work with talented artists around the world and top-tier printing
+        companies to make custom digital artwork, printed on fine art materials,
+        affordable and convenient.
+      </p>
     </StyledBrandResume>
   )
 }
 
-export default BrandResume;
+export default BrandResume

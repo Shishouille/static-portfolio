@@ -1,9 +1,10 @@
-import React from 'react';
-import styled from "styled-components";
-import { caligrafik as theme } from '../../themes';
+import React from "react"
+import styled from "styled-components"
+import { caligrafik as theme } from "../../themes"
 
 const StyledMainTitle = styled.div`
-  h1, h2 {
+  h1,
+  h2 {
     font-family: ${theme.fontFamily.title};
     font-weight: 100;
   }
@@ -15,7 +16,7 @@ const StyledMainTitle = styled.div`
   h2 {
     width: 75%;
     margin: auto;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
   @media (min-width: 768px) {
     font-size: 5vw;
@@ -24,7 +25,7 @@ const StyledMainTitle = styled.div`
       padding-bottom: 3em;
     }
   }
-`;
+`
 
 const MainTitle = () => {
   return (
@@ -35,4 +36,4 @@ const MainTitle = () => {
   )
 }
 
-export default MainTitle;
+export default MainTitle

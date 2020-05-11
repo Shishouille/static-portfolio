@@ -1,15 +1,14 @@
-import React from 'react'
-import styled from "styled-components";
-import { nightingale as theme } from '../../themes';
+import React from "react"
+import styled from "styled-components"
+import { nightingale as theme } from "../../themes"
 
-import { InlineIcon, Icon } from '@iconify/react';
-import playSkipBackSharp from '@iconify/icons-ion/play-skip-back-sharp';
-import playSkipForwardSharp from '@iconify/icons-ion/play-skip-forward-sharp';
-import pauseOutlined from '@iconify/icons-ant-design/pause-outlined';
-import shareIcon from '@iconify/icons-entypo/share';
+import { InlineIcon, Icon } from "@iconify/react"
+import playSkipBackSharp from "@iconify/icons-ion/play-skip-back-sharp"
+import playSkipForwardSharp from "@iconify/icons-ion/play-skip-forward-sharp"
+import pauseOutlined from "@iconify/icons-ant-design/pause-outlined"
+import shareIcon from "@iconify/icons-entypo/share"
 
-import bird1 from '../../images/nightingale/bird1.png';
-
+import bird1 from "../../images/nightingale/bird1.png"
 
 const StyledSong = styled.div`
   background: ${theme.color.bgBottom};
@@ -36,18 +35,18 @@ const StyledSong = styled.div`
       display: flex;
       width: 40%;
       .stop-button {
-          border-radius: 50%;
-          border: 2px solid black;
-          height: 2em;
-          width: 2em;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-left: 1em;
-          justify-self: center;
-          margin-bottom: 2em;
-          background: ${theme.color.bgBottom}
-        }
+        border-radius: 50%;
+        border: 2px solid black;
+        height: 2em;
+        width: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        justify-self: center;
+        margin-bottom: 2em;
+        background: ${theme.color.bgBottom};
+      }
       .song-buttons {
         width: 40%;
         display: flex;
@@ -69,7 +68,7 @@ const StyledSong = styled.div`
     background: ${theme.color.bgRight};
     width: 25%;
     display: flex;
-    justify-content : flex-end;
+    justify-content: flex-end;
     padding: 1em;
     div {
       border-radius: 50%;
@@ -80,7 +79,7 @@ const StyledSong = styled.div`
       align-items: center;
       justify-content: center;
       svg {
-        margin-right: .2em;
+        margin-right: 0.2em;
       }
     }
   }
@@ -92,7 +91,7 @@ const StyledSong = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     span {
-      margin: 0 .5em;
+      margin: 0 0.5em;
     }
   }
   @media (max-width: 768px) {
@@ -100,7 +99,7 @@ const StyledSong = styled.div`
     height: 50%;
     img {
       width: 30%;
-      bottom:0;
+      bottom: 0;
     }
     .song-description {
       width: 100%;
@@ -110,7 +109,7 @@ const StyledSong = styled.div`
       border-bottom-left-radius: 1em;
     }
   }
-`;
+`
 
 const StyledTitle = styled.div`
   width: 100%;
@@ -124,15 +123,15 @@ const StyledTitle = styled.div`
       font-size: 2em;
     }
   }
-`;
+`
 
 const Circle = styled.div`
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  margin: 0 .1em;
+  margin: 0 0.1em;
   background: lightgrey;
-`;
+`
 
 const StyledBird = styled.div`
   position: absolute;
@@ -140,40 +139,44 @@ const StyledBird = styled.div`
   width: 100%;
   height: 30%;
   border-bottom: 2px solid grey;
-`;
+`
 
 const Song = () => {
   return (
     <StyledSong>
-      <img src={bird1} alt=""/> 
-      <StyledBird/>
+      <img src={bird1} alt="" />
+      <StyledBird />
       <div className="song-description">
-      <div className="song-player">
-        <div className="song-buttons">
-          <InlineIcon icon={playSkipBackSharp} height="0.7em" width="0.7em" />
-          <div className="song-circles">
-            <Circle />
-            <Circle className="selected" />
-            <Circle />
-            <Circle />
-            <Circle />
-          </div>
-          <InlineIcon icon={playSkipForwardSharp} height="0.7em" width="0.7em" />
+        <div className="song-player">
+          <div className="song-buttons">
+            <InlineIcon icon={playSkipBackSharp} height="0.7em" width="0.7em" />
+            <div className="song-circles">
+              <Circle />
+              <Circle className="selected" />
+              <Circle />
+              <Circle />
+              <Circle />
+            </div>
+            <InlineIcon
+              icon={playSkipForwardSharp}
+              height="0.7em"
+              width="0.7em"
+            />
           </div>
           <div className="stop-button">
             <Icon icon={pauseOutlined} />
           </div>
-      </div>
-      <div className="song-title">
-        <StyledTitle>
-          <h1>The song of the nightingales</h1>
-        </StyledTitle>
-        <div className="song-time">
-          <p>Birds song #1 </p>
-          <span> ⎼⎼⎼⎼ </span>
-          <p>1:22 / 3:33</p>
         </div>
-      </div>
+        <div className="song-title">
+          <StyledTitle>
+            <h1>The song of the nightingales</h1>
+          </StyledTitle>
+          <div className="song-time">
+            <p>Birds song #1 </p>
+            <span> ⎼⎼⎼⎼ </span>
+            <p>1:22 / 3:33</p>
+          </div>
+        </div>
       </div>
       <div className="song-share">
         <div>
@@ -184,4 +187,4 @@ const Song = () => {
   )
 }
 
-export default Song;
+export default Song
