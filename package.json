@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "static-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Static pages with React from Dribble",
+  "version": "0.1.1",
+  "author": "Shirin Boomi <shirin.boomi.dev@gmail.com>",
   "dependencies": {
     "@iconify/icons-ant-design": "^1.0.8",
     "@iconify/icons-bi": "^1.0.0",
@@ -12,6 +12,7 @@
     "@iconify/icons-cil": "^1.0.2",
     "@iconify/icons-dashicons": "^1.0.9",
     "@iconify/icons-entypo": "^1.0.5",
+    "@iconify/icons-eva": "^1.0.0",
     "@iconify/icons-ic": "^1.0.11",
     "@iconify/icons-ion": "^1.0.12",
     "babel-plugin-styled-components": "^1.10.7",
@@ -51,11 +52,9 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
+  "repository": "https://github.com/Shishouille/static-portfolio",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "main": "index.js"
 }

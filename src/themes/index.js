@@ -41,4 +41,16 @@ const nightingale = {
   },
 }
 
-export { caligrafik, louvre, beatrizRamo, nightingale }
+const chatBox = {
+  color: {
+    bg: "#170654",
+    primary: "#1E5C99",
+    button: "#301973",
+  },
+  fontFamily: {
+    title: "'Poppins', sans-serif",
+    text: "'Mukta', sans-serif",
+  },
+}
+
+export { caligrafik, louvre, beatrizRamo, nightingale, chatBox }

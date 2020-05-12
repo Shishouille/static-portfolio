@@ -27,6 +27,9 @@ const IndexPage = () => (
     <Link to="/nightingale">
       The song of the nightingales <a href="">@Thomas Monavon</a>
     </Link>
+    <Link to="/chatbox">
+      Chatbot Service Concept <a href="">@Ankur Tripathi</a>
+    </Link>
   </Layout>
 )
 

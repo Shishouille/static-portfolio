@@ -1023,6 +1023,11 @@
   resolved "https://registry.yarnpkg.com/@iconify/icons-entypo/-/icons-entypo-1.0.5.tgz#0bb236da8fa5979adbbf713761fea34742f2daf8"
   integrity sha512-MU+WosE4wWPiUqL9rhFBKzuopQW0KieNdEIaVr/hRP2ApBzAGct1gQqeIW+oH0/TLo0unRErt4meYeyNsT6NOg==
 
+"@iconify/icons-eva@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-eva/-/icons-eva-1.0.0.tgz#a3404bd78d0b7a11cb52ab4002f4799abafcfcfa"
+  integrity sha512-TxnpfkQ96eF5p0w6PM+XEoOpsfP+Bn2w2PcutfEksFpcaeX6ra8PrkY5DlTxKtDUE9LC9PcZVVGRZD7jcIDzvQ==
+
 "@iconify/icons-ic@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@iconify/icons-ic/-/icons-ic-1.0.11.tgz#73cd387ae1da39c38134fdabc96db44e48d37268"
