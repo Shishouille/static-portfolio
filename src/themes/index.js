@@ -8,14 +8,14 @@ const caligrafik = {
     title: "'Playfair Display', serif",
     text: "'Source Sans Pro', sans-serif",
   },
-}
+};
 
 const louvre = {
   fontFamily: {
     title: "'Nanum Myeongjo', serif",
     text: "'Montserrat', sans-serif",
   },
-}
+};
 
 const beatrizRamo = {
   color: {
@@ -27,7 +27,7 @@ const beatrizRamo = {
     title: "'Gotu', sans-serif",
     text: "'Asap', sans-serif",
   },
-}
+};
 
 const nightingale = {
   color: {
@@ -39,7 +39,7 @@ const nightingale = {
     title: "'Playfair Display', serif",
     text: "'Montserrat', sans-serif",
   },
-}
+};
 
 const chatBox = {
   color: {
@@ -51,7 +51,7 @@ const chatBox = {
     title: "'Poppins', sans-serif",
     text: "'Mukta', sans-serif",
   },
-}
+};
 
 const japan = {
   color: {
@@ -61,7 +61,7 @@ const japan = {
   fontFamily: {
     text: "'Montserrat', sans-serif",
   },
-}
+};
 
 const musicPlayer = {
   color: {
@@ -72,7 +72,7 @@ const musicPlayer = {
   fontFamily: {
     text: "'Montserrat', sans-serif",
   },
-}
+};
 
 export {
   caligrafik,
@@ -82,4 +82,4 @@ export {
   chatBox,
   japan,
   musicPlayer,
-}
+};

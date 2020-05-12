@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
 const StyledBrandResume = styled.article`
   margin-left: 0.5em;
@@ -23,7 +23,7 @@ const StyledBrandResume = styled.article`
       margin-bottom: 1em;
     }
   }
-`
+`;
 const BrandResume = () => {
   return (
     <StyledBrandResume>
@@ -35,7 +35,7 @@ const BrandResume = () => {
         affordable and convenient.
       </p>
     </StyledBrandResume>
-  )
-}
+  );
+};
 
-export default BrandResume
+export default BrandResume;

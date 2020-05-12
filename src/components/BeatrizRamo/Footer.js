@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-import styled from "styled-components"
-import { beatrizRamo as theme } from "../../themes"
+import styled from "styled-components";
+import { beatrizRamo as theme } from "../../themes";
 
 const StyledFooter = styled.div`
   height: 5vh;
@@ -16,7 +16,7 @@ const StyledFooter = styled.div`
   .selected {
     background-color: ${theme.color.primary};
   }
-`
+`;
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
       <div />
       <div />
     </StyledFooter>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

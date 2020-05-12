@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
-import { Icon } from "@iconify/react"
-import threeDotsVertical from "@iconify/icons-bi/three-dots-vertical"
-import roundShortText from "@iconify/icons-ic/round-short-text"
+import { Icon } from "@iconify/react";
+import threeDotsVertical from "@iconify/icons-bi/three-dots-vertical";
+import roundShortText from "@iconify/icons-ic/round-short-text";
 
-import styled from "styled-components"
-import { nightingale as theme } from "../../themes"
+import styled from "styled-components";
+import { nightingale as theme } from "../../themes";
 
 const StyledNav = styled.nav`
   width: 2%;
@@ -18,7 +18,7 @@ const StyledNav = styled.nav`
   @media (max-width: 768px) {
     width: 5%;
   }
-`
+`;
 
 const Navigation = () => {
   return (
@@ -26,7 +26,7 @@ const Navigation = () => {
       <Icon icon={roundShortText} color="white" />
       <Icon icon={threeDotsVertical} color="white" />
     </StyledNav>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

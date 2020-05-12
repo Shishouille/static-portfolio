@@ -1,11 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import { nightingale as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { nightingale as theme } from "../../themes";
 
-import { InlineIcon } from "@iconify/react"
-import controlsPlay from "@iconify/icons-dashicons/controls-play"
+import { InlineIcon } from "@iconify/react";
+import controlsPlay from "@iconify/icons-dashicons/controls-play";
 
-import bird2 from "../../images/nightingale/bird2.png"
+import bird2 from "../../images/nightingale/bird2.png";
 
 const StyledCredits = styled.div`
   display: flex;
@@ -80,7 +80,7 @@ const StyledCredits = styled.div`
       background-size: cover;
     }
   }
-`
+`;
 
 const Credits = () => {
   return (
@@ -112,7 +112,7 @@ const Credits = () => {
         </div>
       </div>
     </StyledCredits>
-  )
-}
+  );
+};
 
-export default Credits
+export default Credits;

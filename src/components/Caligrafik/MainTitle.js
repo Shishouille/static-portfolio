@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
 const StyledMainTitle = styled.div`
   h1,
@@ -25,7 +25,7 @@ const StyledMainTitle = styled.div`
       padding-bottom: 3em;
     }
   }
-`
+`;
 
 const MainTitle = () => {
   return (
@@ -33,7 +33,7 @@ const MainTitle = () => {
       <h1>Custom Artwork - On Demand</h1>
       <h2>that delights art lovers and embelishes spaces</h2>
     </StyledMainTitle>
-  )
-}
+  );
+};
 
-export default MainTitle
+export default MainTitle;

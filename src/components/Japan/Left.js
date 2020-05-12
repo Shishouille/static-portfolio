@@ -1,16 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import { japan as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { japan as theme } from "../../themes";
 
-import { Icon } from "@iconify/react"
-import gridThreeUp from "@iconify/icons-oi/grid-three-up"
+import { Icon } from "@iconify/react";
+import gridThreeUp from "@iconify/icons-oi/grid-three-up";
 
-import post1 from "../../images/japan/post1.png"
-import post7 from "../../images/japan/post7.png"
+import post1 from "../../images/japan/post1.png";
+import post7 from "../../images/japan/post7.png";
 
 const StyledMenu = styled.div`
   padding: 1em;
-`
+`;
 
 const StyledNumber = styled.div`
   font-size: 10em;
@@ -25,7 +25,7 @@ const StyledNumber = styled.div`
   img {
     height: 50%;
   }
-`
+`;
 const StyledText = styled.div`
   position: relative;
   p {
@@ -51,11 +51,11 @@ const StyledText = styled.div`
     top: 1.5em;
     left: 2em;
   }
-`
+`;
 const StyledMail = styled.div`
   padding: 2em 4em;
   font-weight: bold;
-`
+`;
 
 const Left = () => {
   return (
@@ -74,7 +74,7 @@ const Left = () => {
         <p>nuzarim.erkinbekov@gmail.com</p>
       </StyledMail>
     </>
-  )
-}
+  );
+};
 
-export default Left
+export default Left;

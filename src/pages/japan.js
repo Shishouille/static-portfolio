@@ -1,12 +1,12 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
 
-import styled from "styled-components"
-import { japan as theme } from "../themes"
+import styled from "styled-components";
+import { japan as theme } from "../themes";
 
-import Left from "../../src/components/Japan/Left"
-import Center from "../../src/components/Japan/Center"
-import Right from "../../src/components/Japan/Right"
+import Left from "../../src/components/Japan/Left";
+import Center from "../../src/components/Japan/Center";
+import Right from "../../src/components/Japan/Right";
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -46,7 +46,7 @@ const StyledWrapper = styled.div`
   .mail {
     grid-area: 4 / 1 / 5 / 2;
   }
-`
+`;
 
 const Japan = () => (
   <>
@@ -62,6 +62,6 @@ const Japan = () => (
       <Right />
     </StyledWrapper>
   </>
-)
+);
 
-export default Japan
+export default Japan;

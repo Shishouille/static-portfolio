@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
 const StyledOrder = styled.div`
   text-align: center;
@@ -28,7 +28,7 @@ const StyledOrder = styled.div`
       margin-bottom: 1em;
     }
   }
-`
+`;
 
 const Order = () => {
   return (
@@ -40,7 +40,7 @@ const Order = () => {
         <a href="">Illustrations</a>
       </nav>
     </StyledOrder>
-  )
-}
+  );
+};
 
-export default Order
+export default Order;

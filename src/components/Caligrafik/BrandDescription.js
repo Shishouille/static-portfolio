@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
-import description from "../../images/caligrafik/description.png"
+import description from "../../images/caligrafik/description.png";
 
 const StyledBrandResume = styled.article`
   h5,
@@ -37,7 +37,7 @@ const StyledBrandResume = styled.article`
       padding-left: 3em;
     }
   }
-`
+`;
 const BrandResume = () => {
   return (
     <StyledBrandResume>
@@ -54,7 +54,7 @@ const BrandResume = () => {
         <p>In all shapes and sizes</p>
       </div>
     </StyledBrandResume>
-  )
-}
+  );
+};
 
-export default BrandResume
+export default BrandResume;

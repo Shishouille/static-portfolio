@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import { chatBox as theme } from "../../themes"
-import { Icon } from "@iconify/react"
-import arrowRight from "@iconify/icons-cil/arrow-right"
+import React from "react";
+import styled from "styled-components";
+import { chatBox as theme } from "../../themes";
+import { Icon } from "@iconify/react";
+import arrowRight from "@iconify/icons-cil/arrow-right";
 
-import bot from "../../images/chatbox/bot.png"
+import bot from "../../images/chatbox/bot.png";
 
 const StyledMain = styled.main`
   display: flex;
@@ -60,7 +60,7 @@ const StyledMain = styled.main`
       width: 50%;
     }
   }
-`
+`;
 
 const Main = () => {
   return (
@@ -81,7 +81,7 @@ const Main = () => {
         <img src={bot} alt="" />
       </div>
     </StyledMain>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

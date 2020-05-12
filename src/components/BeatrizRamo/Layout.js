@@ -1,12 +1,12 @@
-import React from "react"
+import React from "react";
 
-import styled from "styled-components"
-import { beatrizRamo as theme } from "../../themes"
+import styled from "styled-components";
+import { beatrizRamo as theme } from "../../themes";
 
-import Navigation from "./Navigation"
-import Footer from "./Footer"
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
-import main from "../../images/beatriz-ramo/mainbr.png"
+import main from "../../images/beatriz-ramo/mainbr.png";
 
 const StyledWrapper = styled.div`
   position: relative;
@@ -23,7 +23,7 @@ const StyledWrapper = styled.div`
       width: 45%;
     }
   }
-`
+`;
 
 const StyledBackground = styled.img`
   position: fixed;
@@ -35,7 +35,7 @@ const StyledBackground = styled.img`
   @media (min-width: 768px) {
     width: auto;
   }
-`
+`;
 
 const Layout = ({ children }) => {
   return (
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
         <Footer />
       </StyledWrapper>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

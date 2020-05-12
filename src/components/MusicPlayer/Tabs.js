@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { musicPlayer as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { musicPlayer as theme } from "../../themes";
 
 const StyledTabs = styled.nav`
   background: #1c2541;
@@ -36,7 +36,7 @@ const StyledTabs = styled.nav`
   @media (max-width: 768px) {
     font-size: 0.5em;
   }
-`
+`;
 
 const Tabs = () => {
   return (
@@ -56,7 +56,7 @@ const Tabs = () => {
         <a href="">Profile</a>
       </div>
     </StyledTabs>
-  )
-}
+  );
+};
 
-export default Tabs
+export default Tabs;

@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { japan as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { japan as theme } from "../../themes";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import toggleSwitch from "@iconify/icons-mdi/toggle-switch"
-import roundViewColumn from "@iconify/icons-ic/round-view-column"
-import pauseFilled from "@iconify/icons-carbon/pause-filled"
+import { Icon, InlineIcon } from "@iconify/react";
+import toggleSwitch from "@iconify/icons-mdi/toggle-switch";
+import roundViewColumn from "@iconify/icons-ic/round-view-column";
+import pauseFilled from "@iconify/icons-carbon/pause-filled";
 
-import post4 from "../../images/japan/post4.png"
+import post4 from "../../images/japan/post4.png";
 
 const StyledLang = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ const StyledLang = styled.div`
     align-self: center;
     margin-left: 0.5em;
   }
-`
+`;
 
 const StyledPost = styled.div`
   padding: 2em;
@@ -41,7 +41,7 @@ const StyledPost = styled.div`
   p {
     text-decoration: line-through;
   }
-`
+`;
 
 const Right = () => {
   return (
@@ -75,7 +75,7 @@ const Right = () => {
         </article>
       </StyledPost>
     </>
-  )
-}
+  );
+};
 
-export default Right
+export default Right;

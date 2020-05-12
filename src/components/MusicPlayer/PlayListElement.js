@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import sharpShortText from "@iconify/icons-ic/sharp-short-text"
-import heartIcon from "@iconify/icons-cil/heart"
-import bxsHeart from "@iconify/icons-bx/bxs-heart"
+import { Icon, InlineIcon } from "@iconify/react";
+import sharpShortText from "@iconify/icons-ic/sharp-short-text";
+import heartIcon from "@iconify/icons-cil/heart";
+import bxsHeart from "@iconify/icons-bx/bxs-heart";
 
 const PlayListElement = ({ title, artist, album, cover, favorite }) => {
   return (
@@ -27,7 +27,7 @@ const PlayListElement = ({ title, artist, album, cover, favorite }) => {
         <p>3:22</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PlayListElement
+export default PlayListElement;

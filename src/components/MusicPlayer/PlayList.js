@@ -1,16 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import { musicPlayer as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { musicPlayer as theme } from "../../themes";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import sharpShortText from "@iconify/icons-ic/sharp-short-text"
-import heartIcon from "@iconify/icons-cil/heart"
+import { Icon, InlineIcon } from "@iconify/react";
+import sharpShortText from "@iconify/icons-ic/sharp-short-text";
+import heartIcon from "@iconify/icons-cil/heart";
 
-import PlayListElement from "./PlayListElement"
+import PlayListElement from "./PlayListElement";
 
-import music1 from "../../images/music-player/music1.png"
-import music2 from "../../images/music-player/music2.png"
-import music3 from "../../images/music-player/music3.png"
+import music1 from "../../images/music-player/music1.png";
+import music2 from "../../images/music-player/music2.png";
+import music3 from "../../images/music-player/music3.png";
 
 const StyledPlayList = styled.div`
   width: 50%;
@@ -55,7 +55,7 @@ const StyledPlayList = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
 const PlayList = () => {
   return (
@@ -102,7 +102,7 @@ const PlayList = () => {
         />
       </div>
     </StyledPlayList>
-  )
-}
+  );
+};
 
-export default PlayList
+export default PlayList;

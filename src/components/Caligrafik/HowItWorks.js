@@ -1,20 +1,20 @@
-import React from "react"
-import { useMediaQuery } from "react-responsive"
+import React from "react";
+import { useMediaQuery } from "react-responsive";
 
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
-import { Icon } from "@iconify/react"
-import checkmarkOutline from "@iconify/icons-carbon/checkmark-outline"
-import arrowRight from "@iconify/icons-cil/arrow-right"
-import arrowDown from "@iconify/icons-bi/arrow-down"
+import { Icon } from "@iconify/react";
+import checkmarkOutline from "@iconify/icons-carbon/checkmark-outline";
+import arrowRight from "@iconify/icons-cil/arrow-right";
+import arrowDown from "@iconify/icons-bi/arrow-down";
 
-import description2 from "../../images/caligrafik/description2.png"
-import beforepic from "../../images/caligrafik/beforepic.png"
-import afterpic from "../../images/caligrafik/afterpic.png"
-import grid1 from "../../images/caligrafik/grid1.png"
-import grid2 from "../../images/caligrafik/grid2.png"
-import grid3 from "../../images/caligrafik/grid3.png"
+import description2 from "../../images/caligrafik/description2.png";
+import beforepic from "../../images/caligrafik/beforepic.png";
+import afterpic from "../../images/caligrafik/afterpic.png";
+import grid1 from "../../images/caligrafik/grid1.png";
+import grid2 from "../../images/caligrafik/grid2.png";
+import grid3 from "../../images/caligrafik/grid3.png";
 
 const StyledHowItWorks = styled.article`
   h5,
@@ -124,7 +124,7 @@ const StyledHowItWorks = styled.article`
       line-height: 0.2em;
     }
   }
-`
+`;
 
 const BubbleList = styled.div`
   border-radius: 50%;
@@ -144,7 +144,7 @@ const BubbleList = styled.div`
     left: -6em;
     top: -2em;
   }
-`
+`;
 
 const PicGrid = styled.div`
   display: grid;
@@ -164,9 +164,9 @@ const PicGrid = styled.div`
     grid-area: A;
   }
   grid-gap: 0.5em;
-`
+`;
 const HowItWorks = () => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" })
+  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
   return (
     <StyledHowItWorks>
       <h2>How it works</h2>
@@ -263,7 +263,7 @@ const HowItWorks = () => {
         </article>
       </div>
     </StyledHowItWorks>
-  )
-}
+  );
+};
 
-export default HowItWorks
+export default HowItWorks;

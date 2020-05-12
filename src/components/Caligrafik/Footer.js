@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
-import { Icon } from "@iconify/react"
-import arrowDownAlt2 from "@iconify/icons-dashicons/arrow-down-alt2"
+import { Icon } from "@iconify/react";
+import arrowDownAlt2 from "@iconify/icons-dashicons/arrow-down-alt2";
 
 const StyledFooter = styled.footer`
   h5,
@@ -52,7 +52,7 @@ const StyledFooter = styled.footer`
       padding: 1em 0;
     }
   }
-`
+`;
 
 const Footer = () => {
   return (
@@ -87,7 +87,7 @@ const Footer = () => {
         </h5>
       </div>
     </StyledFooter>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

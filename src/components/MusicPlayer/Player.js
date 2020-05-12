@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { musicPlayer as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { musicPlayer as theme } from "../../themes";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import playSkipForwardCircle from "@iconify/icons-ion/play-skip-forward-circle"
-import playSkipBackCircle from "@iconify/icons-ion/play-skip-back-circle"
-import roundPlayCircleFilled from "@iconify/icons-ic/round-play-circle-filled"
+import { Icon, InlineIcon } from "@iconify/react";
+import playSkipForwardCircle from "@iconify/icons-ion/play-skip-forward-circle";
+import playSkipBackCircle from "@iconify/icons-ion/play-skip-back-circle";
+import roundPlayCircleFilled from "@iconify/icons-ic/round-play-circle-filled";
 
-import music4 from "../../images/music-player/music4.png"
+import music4 from "../../images/music-player/music4.png";
 
 const StyledPlayer = styled.div`
   width: 35%;
@@ -79,7 +79,7 @@ const StyledPlayer = styled.div`
   @media (max-width: 768px) {
     width: 90%;
   }
-`
+`;
 
 const Player = ({ children }) => {
   return (
@@ -118,7 +118,7 @@ const Player = ({ children }) => {
         </div>
       </div>
     </StyledPlayer>
-  )
-}
+  );
+};
 
-export default Player
+export default Player;

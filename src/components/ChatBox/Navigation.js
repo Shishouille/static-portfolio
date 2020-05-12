@@ -1,11 +1,11 @@
-import React, { useState } from "react"
-import { useMediaQuery } from "react-responsive"
-import styled from "styled-components"
-import { chatBox as theme } from "../../themes"
+import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import styled from "styled-components";
+import { chatBox as theme } from "../../themes";
 
-import { Icon } from "@iconify/react"
-import twotoneShortText from "@iconify/icons-ic/twotone-short-text"
-import searchOutline from "@iconify/icons-eva/search-outline"
+import { Icon } from "@iconify/react";
+import twotoneShortText from "@iconify/icons-ic/twotone-short-text";
+import searchOutline from "@iconify/icons-eva/search-outline";
 
 const StyledNavigation = styled.nav`
   display: flex;
@@ -70,11 +70,11 @@ const StyledNavigation = styled.nav`
   .hidden {
     display: none;
   }
-`
+`;
 
 const Navigation = () => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" })
-  const [isOpen, open] = useState(false)
+  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const [isOpen, open] = useState(false);
   return (
     <StyledNavigation>
       {isBigScreen && (
@@ -112,7 +112,7 @@ const Navigation = () => {
       )}
       <Icon icon={searchOutline} color="white" width="1.2em" />
     </StyledNavigation>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

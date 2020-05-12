@@ -1,14 +1,14 @@
-import React from "react"
-import styled from "styled-components"
-import { nightingale as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { nightingale as theme } from "../../themes";
 
-import { InlineIcon, Icon } from "@iconify/react"
-import playSkipBackSharp from "@iconify/icons-ion/play-skip-back-sharp"
-import playSkipForwardSharp from "@iconify/icons-ion/play-skip-forward-sharp"
-import pauseOutlined from "@iconify/icons-ant-design/pause-outlined"
-import shareIcon from "@iconify/icons-entypo/share"
+import { InlineIcon, Icon } from "@iconify/react";
+import playSkipBackSharp from "@iconify/icons-ion/play-skip-back-sharp";
+import playSkipForwardSharp from "@iconify/icons-ion/play-skip-forward-sharp";
+import pauseOutlined from "@iconify/icons-ant-design/pause-outlined";
+import shareIcon from "@iconify/icons-entypo/share";
 
-import bird1 from "../../images/nightingale/bird1.png"
+import bird1 from "../../images/nightingale/bird1.png";
 
 const StyledSong = styled.div`
   background: ${theme.color.bgBottom};
@@ -109,7 +109,7 @@ const StyledSong = styled.div`
       border-bottom-left-radius: 1em;
     }
   }
-`
+`;
 
 const StyledTitle = styled.div`
   width: 100%;
@@ -123,7 +123,7 @@ const StyledTitle = styled.div`
       font-size: 2em;
     }
   }
-`
+`;
 
 const Circle = styled.div`
   width: 5px;
@@ -131,7 +131,7 @@ const Circle = styled.div`
   border-radius: 50%;
   margin: 0 0.1em;
   background: lightgrey;
-`
+`;
 
 const StyledBird = styled.div`
   position: absolute;
@@ -139,7 +139,7 @@ const StyledBird = styled.div`
   width: 100%;
   height: 30%;
   border-bottom: 2px solid grey;
-`
+`;
 
 const Song = () => {
   return (
@@ -184,7 +184,7 @@ const Song = () => {
         </div>
       </div>
     </StyledSong>
-  )
-}
+  );
+};
 
-export default Song
+export default Song;

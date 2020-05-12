@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
-import portrait1 from "../../images/caligrafik/portrait1.png"
-import portrait2 from "../../images/caligrafik/portrait2.png"
-import portrait3 from "../../images/caligrafik/portrait3.png"
+import portrait1 from "../../images/caligrafik/portrait1.png";
+import portrait2 from "../../images/caligrafik/portrait2.png";
+import portrait3 from "../../images/caligrafik/portrait3.png";
 
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import arrowRight from "@iconify/icons-cil/arrow-right"
+import { Icon, InlineIcon } from "@iconify/react";
+import arrowRight from "@iconify/icons-cil/arrow-right";
 
 const StyledPortrait = styled.div`
   display: flex;
@@ -41,13 +41,13 @@ const StyledPortrait = styled.div`
     width: 25%;
     margin: 1em 2em;
   }
-`
+`;
 const StyledPortraitCategory = styled.section`
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
   }
-`
+`;
 
 const Portrait = ({ title, subtitle, image, arrow, order }) => (
   <StyledPortrait>
@@ -60,7 +60,7 @@ const Portrait = ({ title, subtitle, image, arrow, order }) => (
       <p>{subtitle}</p>
     </div>
   </StyledPortrait>
-)
+);
 
 const PortraitCategory = () => {
   return (
@@ -79,7 +79,7 @@ const PortraitCategory = () => {
       />
       <Portrait title="Illustrations" subtitle="on demand" image={portrait3} />
     </StyledPortraitCategory>
-  )
-}
+  );
+};
 
-export default PortraitCategory
+export default PortraitCategory;

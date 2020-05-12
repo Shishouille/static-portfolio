@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
 const StyledNewsletter = styled.div`
   margin-left: 0.5em;
@@ -57,7 +57,7 @@ const StyledNewsletter = styled.div`
       }
     }
   }
-`
+`;
 
 const Newsletter = () => {
   return (
@@ -76,7 +76,7 @@ const Newsletter = () => {
         <a href="">Privacy Policy</a>
       </p>
     </StyledNewsletter>
-  )
-}
+  );
+};
 
-export default Newsletter
+export default Newsletter;

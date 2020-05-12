@@ -1,12 +1,12 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
+import React from "react";
+import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
 
-import styled from "styled-components"
-import { louvre as theme } from "../themes"
+import styled from "styled-components";
+import { louvre as theme } from "../themes";
 
-import Content from "../../src/components/Louvre/Content"
-import Painting from "../../src/components/Louvre/Painting"
+import Content from "../../src/components/Louvre/Content";
+import Painting from "../../src/components/Louvre/Painting";
 
 const StyledWrapper = styled.div`
   font-family: ${theme.fontFamily.text};
@@ -22,7 +22,7 @@ const StyledWrapper = styled.div`
     justify-content: space-between;
     max-height: 100vh;
   }
-`
+`;
 
 const Louvre = ({ data }) => {
   return (
@@ -38,8 +38,8 @@ const Louvre = ({ data }) => {
         <Painting fluid={data.file.childImageSharp.fluid} />
       </StyledWrapper>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -52,6 +52,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Louvre
+export default Louvre;

@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-import styled from "styled-components"
-import { beatrizRamo as theme } from "../../themes"
+import styled from "styled-components";
+import { beatrizRamo as theme } from "../../themes";
 
 const StyledNav = styled.nav`
   text-align: center;
@@ -30,7 +30,7 @@ const StyledNav = styled.nav`
       }
     }
   }
-`
+`;
 
 const Navigation = () => {
   return (
@@ -48,7 +48,7 @@ const Navigation = () => {
         <a href="">Contact</a>
       </div>
     </StyledNav>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

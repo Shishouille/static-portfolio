@@ -1,11 +1,11 @@
-import React, { useState } from "react"
-import MediaQuery from "react-responsive"
+import React, { useState } from "react";
+import MediaQuery from "react-responsive";
 
-import styled from "styled-components"
-import { caligrafik as theme } from "../../themes"
+import styled from "styled-components";
+import { caligrafik as theme } from "../../themes";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import menuIcon from "@iconify/icons-jam/menu"
+import { Icon, InlineIcon } from "@iconify/react";
+import menuIcon from "@iconify/icons-jam/menu";
 
 const StyledHeaderDesktop = styled.nav`
   display: flex;
@@ -35,7 +35,7 @@ const StyledHeaderDesktop = styled.nav`
       margin-right: 1em;
     }
   }
-`
+`;
 const StyledHeaderMobile = styled.nav`
   .caligrafik {
     font-weight: bold;
@@ -95,7 +95,7 @@ const StyledHeaderMobile = styled.nav`
       }
     }
   }
-`
+`;
 
 const MenuDesktop = () => (
   <StyledHeaderDesktop>
@@ -118,10 +118,10 @@ const MenuDesktop = () => (
       <p>Cart</p>
     </div>
   </StyledHeaderDesktop>
-)
+);
 
 const MenuMobile = () => {
-  const [menu, isOpened] = useState(false)
+  const [menu, isOpened] = useState(false);
   return (
     <StyledHeaderMobile>
       <div className="menu-close">
@@ -147,8 +147,8 @@ const MenuMobile = () => {
         </menu>
       )}
     </StyledHeaderMobile>
-  )
-}
+  );
+};
 
 const Header = () => {
   return (
@@ -161,7 +161,7 @@ const Header = () => {
         <MenuDesktop />
       </MediaQuery>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

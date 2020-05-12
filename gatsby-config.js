@@ -22,6 +22,9 @@ module.exports = {
       resolve: `gatsby-transformer-sharp`,
     },
     {
+      resolve: `gatsby-plugin-smoothscroll`,
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
     },
     {

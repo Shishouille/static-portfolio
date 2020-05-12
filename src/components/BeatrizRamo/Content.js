@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { beatrizRamo as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { beatrizRamo as theme } from "../../themes";
 
 const StyledContent = styled.div`
   height: 80vh;
@@ -19,7 +19,7 @@ const StyledContent = styled.div`
     width: 65%;
     text-align: justify;
   }
-`
+`;
 
 const Content = () => {
   return (
@@ -30,7 +30,7 @@ const Content = () => {
         with natural atmospheres, many colors and light surreal touches.
       </p>
     </StyledContent>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;

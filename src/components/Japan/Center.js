@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { japan as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { japan as theme } from "../../themes";
 
-import { Icon } from "@iconify/react"
-import baselineMouse from "@iconify/icons-ic/baseline-mouse"
+import { Icon } from "@iconify/react";
+import baselineMouse from "@iconify/icons-ic/baseline-mouse";
 
-import post2 from "../../images/japan/post2.png"
-import post3 from "../../images/japan/post3.png"
-import post5 from "../../images/japan/post5.png"
+import post2 from "../../images/japan/post2.png";
+import post3 from "../../images/japan/post3.png";
+import post5 from "../../images/japan/post5.png";
 
 const StyledTitle = styled.div`
   margin: auto;
@@ -20,7 +20,7 @@ const StyledTitle = styled.div`
     text-transform: lowercase;
     text-align: center;
   }
-`
+`;
 
 const StyledJapan = styled.div`
   width: 100%;
@@ -84,7 +84,7 @@ const StyledJapan = styled.div`
     font-weight: bold;
     margin-right: 1em;
   }
-`
+`;
 
 const Center = () => {
   return (
@@ -104,7 +104,7 @@ const Center = () => {
         <p>Q&A</p>
       </StyledJapan>
     </>
-  )
-}
+  );
+};
 
-export default Center
+export default Center;

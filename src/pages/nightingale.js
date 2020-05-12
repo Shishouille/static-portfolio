@@ -1,17 +1,17 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
 
-import styled from "styled-components"
-import { caligrafik as theme } from "../themes"
+import styled from "styled-components";
+import { caligrafik as theme } from "../themes";
 
-import Navigation from "../../src/components/Nightingale/Navigation"
-import Main from "../../src/components/Nightingale/Main"
+import Navigation from "../../src/components/Nightingale/Navigation";
+import Main from "../../src/components/Nightingale/Main";
 
 const StyledWrapper = styled.div`
   display: flex;
   min-height: 100vh;
   font-family: ${theme.fontFamily.text};
-`
+`;
 
 const Nightingale = () => (
   <>
@@ -26,6 +26,6 @@ const Nightingale = () => (
       <Main />
     </StyledWrapper>
   </>
-)
+);
 
-export default Nightingale
+export default Nightingale;

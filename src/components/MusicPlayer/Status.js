@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { musicPlayer as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { musicPlayer as theme } from "../../themes";
 
-import { Icon, InlineIcon } from "@iconify/react"
-import heartIcon from "@iconify/icons-cil/heart"
-import discSharp from "@iconify/icons-ion/disc-sharp"
-import menuIcon from "@iconify/icons-ion/menu"
-import personFill from "@iconify/icons-bi/person-fill"
-import uploadAlt from "@iconify/icons-uil/upload-alt"
+import { Icon, InlineIcon } from "@iconify/react";
+import heartIcon from "@iconify/icons-cil/heart";
+import discSharp from "@iconify/icons-ion/disc-sharp";
+import menuIcon from "@iconify/icons-ion/menu";
+import personFill from "@iconify/icons-bi/person-fill";
+import uploadAlt from "@iconify/icons-uil/upload-alt";
 
 const StyledStatus = styled.menu`
   all: unset;
@@ -54,7 +54,7 @@ const StyledStatus = styled.menu`
       width: 75%;
     }
   }
-`
+`;
 
 const Status = () => {
   return (
@@ -69,7 +69,7 @@ const Status = () => {
         <Icon icon={uploadAlt} color={theme.color.primary} height="2em" />
       </div>
     </StyledStatus>
-  )
-}
+  );
+};
 
-export default Status
+export default Status;

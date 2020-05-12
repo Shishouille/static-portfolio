@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import { musicPlayer as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { musicPlayer as theme } from "../../themes";
 
-import Tabs from "./Tabs"
-import Status from "./Status"
+import Tabs from "./Tabs";
+import Status from "./Status";
 
 const StyledLayout = styled.div`
   min-height: 100vh;
@@ -18,7 +18,7 @@ const StyledLayout = styled.div`
       flex-direction: column;
     }
   }
-`
+`;
 
 const Layout = ({ children }) => {
   return (
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
     </StyledLayout>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

@@ -1,9 +1,9 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
 
-import Layout from "../../src/components/MusicPlayer/Layout"
-import Player from "../../src/components/MusicPlayer/Player"
-import PlayList from "../../src/components/MusicPlayer/PlayList"
+import Layout from "../../src/components/MusicPlayer/Layout";
+import Player from "../../src/components/MusicPlayer/Player";
+import PlayList from "../../src/components/MusicPlayer/PlayList";
 
 const MusicPlayer = () => (
   <>
@@ -18,6 +18,6 @@ const MusicPlayer = () => (
       <PlayList />
     </Layout>
   </>
-)
+);
 
-export default MusicPlayer
+export default MusicPlayer;

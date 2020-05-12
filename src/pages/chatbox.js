@@ -1,12 +1,12 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
 
-import styled from "styled-components"
-import { caligrafik as theme } from "../themes"
+import styled from "styled-components";
+import { caligrafik as theme } from "../themes";
 
-import Navigation from "../../src/components/ChatBox/Navigation"
-import Main from "../../src/components/ChatBox/Main"
-import Footer from "../../src/components/ChatBox/Footer"
+import Navigation from "../../src/components/ChatBox/Navigation";
+import Main from "../../src/components/ChatBox/Main";
+import Footer from "../../src/components/ChatBox/Footer";
 
 const StyledWrapper = styled.div`
   padding-top: 1em;
@@ -24,7 +24,7 @@ const StyledWrapper = styled.div`
     width: 80%;
     margin: auto;
   }
-`
+`;
 
 const ChatBox = () => (
   <>
@@ -42,6 +42,6 @@ const ChatBox = () => (
       <Footer />
     </StyledWrapper>
   </>
-)
+);
 
-export default ChatBox
+export default ChatBox;

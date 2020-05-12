@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { useMediaQuery } from "react-responsive"
-import { louvre as theme } from "../../themes"
+import React from "react";
+import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
+import { louvre as theme } from "../../themes";
 
-import { Icon } from "@iconify/react"
-import alignCenter from "@iconify/icons-jam/align-center"
+import { Icon } from "@iconify/react";
+import alignCenter from "@iconify/icons-jam/align-center";
 
-import logo from "../../images/louvre/logo.png"
-import gericault from "../../images/louvre/gericault.svg"
+import logo from "../../images/louvre/logo.png";
+import gericault from "../../images/louvre/gericault.svg";
 
 const StyledMain = styled.main`
   display: flex;
@@ -84,10 +84,10 @@ const StyledMain = styled.main`
       width: 70%;
     }
   }
-`
+`;
 
 const Content = () => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" })
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   return (
     <StyledMain>
       <div className="nav">
@@ -120,7 +120,7 @@ const Content = () => {
         </footer>
       </div>
     </StyledMain>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;
