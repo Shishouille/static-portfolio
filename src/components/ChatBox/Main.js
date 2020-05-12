@@ -51,7 +51,7 @@ const StyledMain = styled.main`
     position: absolute;
     z-index: 2;
     top: -9%;
-    right: -1.5em;
+    right: -2.5em;
   }
   @media (min-width: 768px) {
     flex-direction: row;

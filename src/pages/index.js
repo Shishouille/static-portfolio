@@ -30,6 +30,9 @@ const IndexPage = () => (
     <Link to="/chatbox">
       Chatbot Service Concept <a href="">@Ankur Tripathi</a>
     </Link>
+    <Link to="/japan">
+      Japanese Layering <a href="">@nuzarim</a>
+    </Link>
   </Layout>
 )
 

@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
   }
 `
 
-const Calligrafik = () => (
+const ChatBox = () => (
   <>
     <Helmet>
       <link
@@ -44,4 +44,4 @@ const Calligrafik = () => (
   </>
 )
 
-export default Calligrafik
+export default ChatBox

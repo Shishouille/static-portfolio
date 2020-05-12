@@ -13,7 +13,7 @@ const StyledWrapper = styled.div`
   font-family: ${theme.fontFamily.text};
 `
 
-const Calligrafik = () => (
+const Nightingale = () => (
   <>
     <Helmet>
       <link
@@ -28,4 +28,4 @@ const Calligrafik = () => (
   </>
 )
 
-export default Calligrafik
+export default Nightingale

@@ -53,4 +53,14 @@ const chatBox = {
   },
 }
 
-export { caligrafik, louvre, beatrizRamo, nightingale, chatBox }
+const japan = {
+  color: {
+    bg: "#F9F9F9",
+    primary: "#ED3341",
+  },
+  fontFamily: {
+    text: "'Montserrat', sans-serif",
+  },
+}
+
+export { caligrafik, louvre, beatrizRamo, nightingale, chatBox, japan }
