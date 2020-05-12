@@ -10,26 +10,57 @@ import pauseFilled from "@iconify/icons-carbon/pause-filled"
 import post4 from "../../images/japan/post4.png"
 
 const StyledLang = styled.div`
-
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 1em;
+  p {
+    align-self: center;
+    margin-left: 0.5em;
+  }
 `
 
 const StyledPost = styled.div`
-
+  padding: 2em;
+  button {
+    border: none;
+    width: 3em;
+    margin-right: 0.5em;
+  }
+  .button-on {
+    background: ${theme.color.primary};
+  }
+  .button-off {
+    background: black;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  p {
+    text-decoration: line-through;
+  }
 `
 
 const Right = () => {
   return (
     <>
       <StyledLang className="lang">
-        <Icon icon={toggleSwitch} color={theme.color.primary} /> <p>EN</p>
+        <InlineIcon
+          icon={toggleSwitch}
+          height="1.5em"
+          color={theme.color.primary}
+        />{" "}
+        <p>EN</p>
       </StyledLang>
       <StyledPost className="post">
         <header>
           <button className="button-on">
-            <Icon icon={roundViewColumn} color="white" />
+            <InlineIcon icon={roundViewColumn} color="white" />
           </button>
           <button className="button-off">
-            <Icon icon={pauseFilled} vFlip color="white" />
+            <InlineIcon icon={pauseFilled} vFlip color="white" />
           </button>
         </header>
         <article>

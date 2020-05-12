@@ -42,7 +42,7 @@ const StyledJapan = styled.div`
   }
   .cherry {
     left: -14em;
-    bottom: 0;
+    bottom: 10%;
   }
   .lamp {
     left: 5em;

@@ -63,4 +63,23 @@ const japan = {
   },
 }
 
-export { caligrafik, louvre, beatrizRamo, nightingale, chatBox, japan }
+const musicPlayer = {
+  color: {
+    bg: "#0B123B",
+    primary: "#57B8B7",
+    secondary: "#1C2541",
+  },
+  fontFamily: {
+    text: "'Montserrat', sans-serif",
+  },
+}
+
+export {
+  caligrafik,
+  louvre,
+  beatrizRamo,
+  nightingale,
+  chatBox,
+  japan,
+  musicPlayer,
+}

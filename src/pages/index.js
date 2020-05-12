@@ -33,6 +33,9 @@ const IndexPage = () => (
     <Link to="/japan">
       Japanese Layering <a href="">@nuzarim</a>
     </Link>
+    <Link to="/music-player">
+      Music Player <a href="">@Maksym</a>
+    </Link>
   </Layout>
 )
 
