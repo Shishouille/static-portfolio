@@ -36,6 +36,9 @@ const IndexPage = () => (
     <Link to="/music-player">
       Music Player <a href="">@Maksym</a>
     </Link>
+    <Link to="/liefde">
+      Liefde City Tribute <a href="">@Rachelizmarvel</a>
+    </Link>
   </Layout>
 );
 

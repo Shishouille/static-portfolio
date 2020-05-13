@@ -74,6 +74,21 @@ const musicPlayer = {
   },
 };
 
+const liefde = {
+  color: {
+    bg:
+      "linear-gradient(90deg, rgba(241,251,255,1) 15%, rgba(250,247,255,1) 100%)",
+    primary: "#576BA3",
+    secondary: "#97989C",
+    button:
+      "linear-gradient(90deg, rgba(191,189,244,1) 15%, rgba(89,174,244,1) 100%)",
+  },
+  fontFamily: {
+    title: "'Playfair Display', serif",
+    text: "'Muli', sans-serif",
+  },
+};
+
 export {
   caligrafik,
   louvre,
@@ -82,4 +97,5 @@ export {
   chatBox,
   japan,
   musicPlayer,
+  liefde,
 };

@@ -15,14 +15,14 @@ const StyledBody = styled.div`
 `;
 
 const StyledCursor = styled.span`
-width: 25px;
-height: 25px;
-border-radius: 50%;
-border: 1.5px solid #ece9eb;
-position: absolute;
-z-index: 10;
-top: ${props => props.top};
-left: ${props => props.left};
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1.5px solid #ece9eb;
+  position: absolute;
+  z-index: 10;
+  top: ${props => props.top};
+  left: ${props => props.left};
 `;
 
 const BeatrizRamo = () => {

@@ -22,8 +22,13 @@ const StyledHeaderDesktop = styled.nav`
     font-family: ${theme.fontFamily.title};
   }
   a {
+    cursor: pointer;
     all: unset;
     margin: 0 3em;
+    width: 100%;
+    &:hover {
+      text-transform: uppercase;
+    }
   }
   .burger-menu {
     margin-left: 1em;

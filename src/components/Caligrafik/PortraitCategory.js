@@ -4,11 +4,23 @@ import portrait1 from "../../images/caligrafik/portrait1.png";
 import portrait2 from "../../images/caligrafik/portrait2.png";
 import portrait3 from "../../images/caligrafik/portrait3.png";
 
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { caligrafik as theme } from "../../themes";
 
 import { Icon, InlineIcon } from "@iconify/react";
 import arrowRight from "@iconify/icons-cil/arrow-right";
+
+const translateLeft = keyframes`
+from { 
+  transform: translate(0,  0); 
+  }
+50% { 
+transform: translate(1em, 0); 
+}
+to { 
+transform: translate(0, 0); 
+}
+`;
 
 const StyledPortrait = styled.div`
   display: flex;
@@ -21,8 +33,13 @@ const StyledPortrait = styled.div`
     width: 100%;
     svg {
       position: absolute;
+      cursor: pointer;
       bottom: 3em;
       right: 2em;
+      &:hover {
+        animation-name: ${translateLeft};
+        animation-duration: 1s;
+      }
     }
   }
   .portrait-description {

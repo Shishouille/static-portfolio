@@ -21,6 +21,11 @@ const StyledTrustedClients = styled.section`
     svg {
       height: 2em;
       width: 2em;
+      &:hover {
+        path {
+          fill: #636363;
+        }
+      }
     }
   }
 `;

@@ -17,6 +17,7 @@ import Footer from "../../src/components/Caligrafik/Footer";
 
 const StyledWrapper = styled.div`
   position: relative;
+  transition: all 1s cubic-bezier(0, 0.55, 0.45, 1);
   z-index: 0;
   .bg-main {
     background-color: ${theme.color.primary};
