@@ -18,7 +18,7 @@ const StyledPlayer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   h1 {
-    color: ${theme.color.secondary};
+    color: #374263;
     text-transform: uppercase;
     padding-top: 0.5em;
   }

@@ -20,7 +20,7 @@ const StyledTabs = styled.nav`
       height: 100%;
       align-items: center;
       justify-content: center;
-      background: ${theme.color.bg};
+      background: rgba(9, 14, 33, 1);
       border-top-left-radius: 0.3em;
       border-top-right-radius: 0.3em;
       font-weight: bold;

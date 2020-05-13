@@ -20,10 +20,10 @@ const StyledSong = styled.div`
   z-index: 0;
   img {
     width: 400px;
-    position: absolute;
+    position: fixed;
     z-index: -1;
-    left: 0;
-    bottom: 7em;
+    left: 1em;
+    bottom: 5.1em;
   }
 
   .song-description {
@@ -98,8 +98,8 @@ const StyledSong = styled.div`
     flex-direction: column;
     height: 50%;
     img {
-      width: 30%;
-      bottom: 0;
+      width: 40%;
+      bottom: 10.1em;
     }
     .song-description {
       width: 100%;
@@ -133,7 +133,7 @@ const Circle = styled.div`
   background: lightgrey;
 `;
 
-const StyledBird = styled.div`
+const StyledLine = styled.div`
   position: absolute;
   z-index: -2;
   width: 100%;
@@ -145,7 +145,7 @@ const Song = () => {
   return (
     <StyledSong>
       <img src={bird1} alt="" />
-      <StyledBird />
+      <StyledLine />
       <div className="song-description">
         <div className="song-player">
           <div className="song-buttons">

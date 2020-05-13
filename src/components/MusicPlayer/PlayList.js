@@ -18,7 +18,7 @@ const StyledPlayList = styled.div`
   h2 {
     text-transform: uppercase;
     margin-top: 1em;
-    color: ${theme.color.secondary};
+    color: #374263;
   }
   .waiting-list {
     background-image: linear-gradient(
@@ -48,6 +48,29 @@ const StyledPlayList = styled.div`
         }
         p {
           text-align: start;
+        }
+        .cover-play {
+          position: relative;
+          &:hover {
+            img {
+              opacity: 0.3;
+            }
+            .hidden-play {
+              opacity: 1;
+            }
+          }
+          img {
+            transition: 0.5s ease;
+            backface-visibility: hidden;
+          }
+          .hidden-play {
+            transition: 0.5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
       }
     }
