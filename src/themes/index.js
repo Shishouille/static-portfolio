@@ -89,6 +89,16 @@ const liefde = {
   },
 };
 
+const pawfect = {
+  color: {
+    primary: "#F76D6D",
+    secondary: "#24315E",
+  },
+  fontFamily: {
+    text: "'Manrope', sans-serif",
+  },
+};
+
 export {
   caligrafik,
   louvre,
@@ -98,4 +108,5 @@ export {
   japan,
   musicPlayer,
   liefde,
+  pawfect,
 };

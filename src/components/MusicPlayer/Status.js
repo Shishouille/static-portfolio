@@ -9,27 +9,6 @@ import menuIcon from "@iconify/icons-ion/menu";
 import personFill from "@iconify/icons-bi/person-fill";
 import uploadAlt from "@iconify/icons-uil/upload-alt";
 
-const heartBeat = keyframes`
-from { 
-  transform: scale(.75); 
-  }
-  20% { 
-  transform: scale(1); 
-  }
-  40% { 
-  transform: scale(.75); 
-  }
-  60% { 
-  transform: scale(1); 
-  }
-  80% { 
-  transform: scale(.75); 
-  }
-  to { 
-  transform: scale(.75); 
-  }
-`;
-
 const StyledStatus = styled.menu`
   all: unset;
   padding: 0.5em 0;

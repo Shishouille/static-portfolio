@@ -10,6 +10,10 @@ const StyledBrandResume = styled.article`
     font-family: ${theme.fontFamily.text};
     font-weight: normal;
   }
+  h5 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
   h2 {
     font-family: ${theme.fontFamily.title};
   }

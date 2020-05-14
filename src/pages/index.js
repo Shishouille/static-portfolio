@@ -39,6 +39,9 @@ const IndexPage = () => (
     <Link to="/liefde">
       Liefde City Tribute <a href="">@Rachelizmarvel</a>
     </Link>
+    <Link to="/pawfect">
+      Pawfect <a href="">@Ishaan Kumar</a>
+    </Link>
   </Layout>
 );
 

@@ -44,7 +44,7 @@ const BeatrizRamo = () => {
         />
       </Helmet>
       <StyledBody onMouseMove={cursorHandler}>
-        {isDesktop && <StyledCursor left={left} top={top} />}
+        {isDesktop && <StyledCursor left={left} top={top} className="cursor" />}
         <Layout>
           <Content />
         </Layout>

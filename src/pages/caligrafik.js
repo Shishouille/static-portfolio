@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
 
 import styled from "styled-components";
 import { caligrafik as theme } from "../themes";
@@ -24,29 +25,34 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const Calligrafik = () => (
-  <>
-    <Helmet>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap"
-        rel="stylesheet"
-      />
-    </Helmet>
-    <StyledWrapper>
-      <div className="bg-main">
-        <Header />
-        <MainTitle />
-        <PortraitCategory />
-        <TrustedClients />
-        <BrandResume />
-        <BrandDescription />
-        <HowItWorks />
-      </div>
-      <Order />
-      <Newsletter />
-      <Footer />
-    </StyledWrapper>
-  </>
-);
+const Calligrafik = () => {
+  AOS.init();
+
+  return (
+    <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </Helmet>
+      <StyledWrapper>
+        <div className="bg-main">
+          <Header />
+          <MainTitle />
+          <PortraitCategory />
+          <TrustedClients />
+          <BrandResume />
+          <BrandDescription />
+          <HowItWorks />
+        </div>
+        <Order />
+        <Newsletter />
+        <Footer />
+      </StyledWrapper>
+    </>
+  );
+};
 
 export default Calligrafik;

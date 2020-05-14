@@ -7,9 +7,14 @@ import { Icon } from "@iconify/react";
 import arrowDownAlt2 from "@iconify/icons-dashicons/arrow-down-alt2";
 
 const StyledFooter = styled.footer`
+  padding: 1em 0;
   h5,
   li {
     font-family: ${theme.fontFamily.text};
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   h5 {
     color: ${theme.color.dark};
@@ -27,7 +32,6 @@ const StyledFooter = styled.footer`
     font-weight: bold;
     font-size: 1.2em;
     width: 100%;
-    padding: 1em 0;
   }
   background-color: ${theme.color.primary};
   @media (min-width: 768px) {

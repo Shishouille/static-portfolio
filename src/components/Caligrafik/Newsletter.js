@@ -14,6 +14,9 @@ const StyledNewsletter = styled.div`
     font-family: ${theme.fontFamily.text};
     color: ${theme.color.dark};
   }
+  .newsletter-input {
+    margin: 1em 0;
+  }
   button,
   input {
     padding: 0.5em;
@@ -41,7 +44,7 @@ const StyledNewsletter = styled.div`
 
   @media (min-width: 768px) {
     width: 70%;
-    margin: 2em auto;
+    margin: 4em auto;
     div {
       width: 100%;
       margin: auto;
@@ -67,7 +70,7 @@ const Newsletter = () => {
         Subscribe to our newsletter to hear about the latest news, promotions
         and more.
       </p>
-      <div>
+      <div className="newsletter-input">
         <input type="text" placeholder="Your email..." />
         <button type="button"> Subscribe </button>
       </div>

@@ -67,7 +67,7 @@ const StyledPortraitCategory = styled.section`
 `;
 
 const Portrait = ({ title, subtitle, image, arrow, order }) => (
-  <StyledPortrait>
+  <StyledPortrait data-aos="slide-up" data-aos-duration="1000">
     <div className={`portrait-img ${order && "switch"}`}>
       <img src={image} alt="" />
       {arrow && <Icon icon={arrowRight} color="white" />}

@@ -8,6 +8,12 @@ const StyledNav = styled.nav`
   a {
     all: unset;
     margin-left: 0.7em;
+    &:hover {
+      .cursor {
+        border: 1.5px solid ${theme.color.primary};
+      }
+      color: ${theme.color.secondary};
+    }
   }
   .logo {
     display: flex;
