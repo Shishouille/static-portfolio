@@ -32,6 +32,11 @@ const StyledNavigation = styled.nav`
       left: -10%;
     }
   }
+  @media (max-width: 768px) {
+    a {
+      font-size: .8em;
+    }
+  }
 `;
 
 const Navigation = () => {
