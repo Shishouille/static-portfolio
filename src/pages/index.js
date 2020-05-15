@@ -45,6 +45,9 @@ const IndexPage = () => (
     <Link to="/art-world">
       Art World <a href="">@Zihad Islam</a>
     </Link>
+    <Link to="/crope">
+      Craft Design Solutions <a href="">@Katerina</a>
+    </Link>
   </Layout>
 );
 

@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
       border-radius: 50%;
       z-index: -1;
       right: 25%;
-      top: 25%;
+      top: 0;
       width: 50%;
       padding-top: 50%;
       background: ${theme.color.bgWhite};

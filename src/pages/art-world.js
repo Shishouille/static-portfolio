@@ -100,7 +100,7 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const Calligrafik = () => {
+const ArtWorld = () => {
   return (
     <>
       <Helmet>
@@ -124,4 +124,4 @@ const Calligrafik = () => {
   );
 };
 
-export default Calligrafik;
+export default ArtWorld;

@@ -16,6 +16,7 @@ const StyledFollowUs = styled.section`
   }
   .painting {
     background: ${theme.color.bgPaint};
+    width: 25%;
     padding: 1em;
     margin: 0 1em;
     border-radius: 0.4em;
@@ -34,6 +35,7 @@ const StyledFollowUs = styled.section`
       flex-direction: column;
       .painting {
         margin: 1em 0;
+        width: 100%;
       }
     }
   }

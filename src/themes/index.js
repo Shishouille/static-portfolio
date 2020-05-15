@@ -111,6 +111,15 @@ const artWorld = {
   },
 };
 
+const crope = {
+  color: {
+    bg: "#14161E",
+  },
+  fontFamily: {
+    text: "'Roboto', sans-serif;",
+  },
+};
+
 export {
   caligrafik,
   louvre,
@@ -122,4 +131,5 @@ export {
   liefde,
   pawfect,
   artWorld,
+  crope,
 };

@@ -187,7 +187,7 @@ const HowItWorks = () => {
           <section className="absolute-description">
             <img src={description2} alt="" />
             <div className="pic-description" id="order-received">
-              <div data-aos="fade-up">
+              <div>
                 <Icon icon={checkmarkOutline} />
                 <p>Order received</p>
               </div>

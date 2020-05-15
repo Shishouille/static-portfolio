@@ -61,10 +61,11 @@ const StyledJapan = styled.div`
   }
   main {
     display: flex;
+    width: 100%;
     border: none;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 15%;
     margin: auto;
     margin-top: 1em;
     position: relative;
@@ -73,7 +74,10 @@ const StyledJapan = styled.div`
       text-transform: uppercase;
       font-family: ${theme.fontFamily.text};
       font-size: 5em;
+      height: 75%;
       margin-bottom: 0.5em;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
     }
     svg {
       margin: auto;

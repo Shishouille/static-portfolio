@@ -27,6 +27,7 @@ const StyledWrapper = styled.div`
 
 const StyledBackground = styled.img`
   position: fixed;
+  height: 100%;
   margin: 0;
   bottom: 0;
   right: 0;
