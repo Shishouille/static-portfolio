@@ -42,6 +42,9 @@ const IndexPage = () => (
     <Link to="/pawfect">
       Pawfect <a href="">@Ishaan Kumar</a>
     </Link>
+    <Link to="/art-world">
+      Art World <a href="">@Zihad Islam</a>
+    </Link>
   </Layout>
 );
 

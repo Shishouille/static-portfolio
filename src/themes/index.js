@@ -99,6 +99,18 @@ const pawfect = {
   },
 };
 
+const artWorld = {
+  color: {
+    primary: "#FC5000",
+    bgDark: "#E9E1D4",
+    bgWhite: "#F6ECE3",
+    bgPaint: "#FDF5F2",
+  },
+  fontFamily: {
+    text: "'Lato', sans-serif",
+  },
+};
+
 export {
   caligrafik,
   louvre,
@@ -109,4 +121,5 @@ export {
   musicPlayer,
   liefde,
   pawfect,
+  artWorld,
 };

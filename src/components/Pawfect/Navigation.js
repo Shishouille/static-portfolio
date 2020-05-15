@@ -34,7 +34,7 @@ const StyledNavigation = styled.nav`
   }
   @media (max-width: 768px) {
     a {
-      font-size: .8em;
+      font-size: 0.8em;
     }
   }
 `;
