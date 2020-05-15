@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
 `;
 
 const Calligrafik = () => {
-  AOS.init();
+  // AOS.init();
 
   return (
     <>

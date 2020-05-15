@@ -1,8 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { liefde as theme } from "../../themes";
 
 import main from "../../images/liefde/main.png";
+
+const gradient = keyframes`
+  from {
+    background: linear-gradient(270deg, rgba(191,189,244,1) 15%, rgba(89,174,244,1) 100%);
+  }
+  to {
+    background: ${theme.color.button};
+  }
+`;
 
 const StyledContent = styled.main`
   display: flex;
@@ -43,6 +52,12 @@ const StyledContent = styled.main`
         border: none;
         border-radius: .5em;
         padding: .5em 1em;
+        transition: background-color 1s ease;
+        &:hover {
+          animation-name: ${gradient};
+          animation-duration: .5s;
+          animation-timing-function: ease;
+        }
     }
   }
   @media (min-width: 768px) {
