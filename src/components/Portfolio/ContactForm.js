@@ -5,13 +5,45 @@ import { Element } from "react-scroll";
 import { useForm } from "react-hook-form";
 
 const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  input {
-    width: 75%;
+  width: 80%;
+  margin: auto;
+  h2 {
+    margin: 1em 0;
+    font-size: 2.5em;
   }
+  .group {
+    width: 100%;
+  }
+  .form-display {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    .input-group {
+      padding: 0 1em;
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      input {
+        width: 100%;
+        padding: 0.5em;
+      }
+    }
+  }
+  .form-submit {
+    text-align: end;
+    margin-right: 1em;
+    button {
+      cursor: pointer;
+      background: ${theme.color.primary};
+      color: white;
+      padding: 0.5em 0.75em;
+      border: none;
+    }
+  }
+  min-height: 100vh;
+  color: ${theme.color.primary};
 `;
 
 const ContactForm = ({ locale }) => {
@@ -25,41 +57,65 @@ const ContactForm = ({ locale }) => {
         method="POST"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <input
-          type="text"
-          placeholder="Sherlock"
-          name="firstname"
-          ref={register({ required: true, maxLength: 80 })}
-        />
-        {errors.firstname && <span>{locale.firstname.error}</span>}
-        <input
-          type="text"
-          placeholder="Holmes"
-          name="lastname"
-          ref={register({ maxLength: 100 })}
-        />
-        {errors.lastname && (
-          <span>{locale.lastname.error}</span>
-        )}
-        <input
-          type="text"
-          placeholder="sherlock.holmes@elementary.com"
-          name="email"
-          ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-        />
-        {errors.email && <span>{locale.email.error}</span>}
-        <input
-          type="tel"
-          placeholder="06XXXXXXXX"
-          name="tel"
-          ref={register({ maxLength: 10 })}
-        />
-        {errors.tel && <span>{locale.tel.error}</span>}
-        <textarea name="message" ref={register({ required: true })} />
-        {errors.message && (
-          <span>{locale.message.error}</span>
-        )}
-        <button type="submit">Envoyer</button>
+        <h2>N'hésitez pas à me contacter</h2>
+        <div className="form-display">
+          <div className="group">
+            <div className="input-group">
+              <label htmlFor="">{locale.firstname.title}</label>
+              <input
+                type="text"
+                placeholder="Sherlock"
+                name="firstname"
+                ref={register({ required: true, maxLength: 80 })}
+              />
+              {errors.firstname && <span>{locale.firstname.error}</span>}
+            </div>
+            <div className="input-group">
+              <label htmlFor="">{locale.lastname.title}</label>
+              <input
+                type="text"
+                placeholder="Holmes"
+                name="lastname"
+                ref={register({ maxLength: 100 })}
+              />
+              {errors.lastname && <span>{locale.lastname.error}</span>}
+            </div>
+            <div className="input-group">
+              <label htmlFor="">{locale.email.title}</label>
+              <input
+                type="text"
+                placeholder="sherlock.holmes@elementary.com"
+                name="email"
+                ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+              />
+              {errors.email && <span>{locale.email.error}</span>}
+            </div>{" "}
+            <div className="input-group">
+              <label htmlFor="">{locale.tel.title}</label>
+              <input
+                type="tel"
+                placeholder="06XXXXXXXX"
+                name="tel"
+                ref={register({ maxLength: 10 })}
+              />
+              {errors.tel && <span>{locale.tel.error}</span>}
+            </div>
+          </div>
+          <div className="group">
+            <div className="input-group">
+              <label htmlFor="">{locale.message.title}</label>
+              <textarea
+                name="message"
+                rows="7"
+                ref={register({ required: true })}
+              />
+              {errors.message && <span>{locale.message.error}</span>}
+            </div>
+            <div className="form-submit">
+              <button type="submit">Envoyer</button>
+            </div>
+          </div>
+        </div>
       </StyledForm>
     </Element>
   );

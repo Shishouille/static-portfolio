@@ -1,4 +1,14 @@
+import bxlReact from '@iconify/icons-bx/bxl-react';
+import reduxIcon from '@iconify/icons-cib/redux';
+import gatsbyIcon from '@iconify/icons-cib/gatsby';
+import bxlNodejs from '@iconify/icons-bx/bxl-nodejs';
+import slackCircleFilled from '@iconify/icons-ant-design/slack-circle-filled';
+import bxlDiscord from '@iconify/icons-bx/bxl-discord';
+import phpIcon from '@iconify/icons-cib/php';
+import mysqlIcon from '@iconify/icons-cib/mysql';
+
 export default {
+  navigation: ['A propos', 'Ce que je fais', 'Projets'],
   bio: {
     title: "Bonjour, je suis Shirin Boomi.",
     subtitle: "Je suis développeuse Front-end.",
@@ -22,16 +32,19 @@ export default {
     second: "Ce que j'ai pratiqué",
     primary: [
       {
+        icons: [bxlReact, reduxIcon],
         title: "Single Page Application",
         content:
           "Les SPA, c'est mon dada! Tout au moins, j'adore travailler avec React et React-Redux. Je peux facilement rendre mes compétences transversables sur Angular ou VueJS si besoin.",
       },
       {
+        icons: [gatsbyIcon],
         title: "JAMStack",
         content:
           "J'ai eu l'occasion de travailler avec GatsbyJS et NextJS pour m'améliorer en front-end.",
       },
       {
+        icons: [bxlNodejs],
         title: "Nouveaux Horizons",
         content:
           "J'aimerais maîtriser ce langage qu'est Javascript. Je m'intéresse au back-end NodeJS pour m'étendre à du fullstack.",
@@ -39,11 +52,13 @@ export default {
     ],
     secondary: [
       {
+        icons: [phpIcon, mysqlIcon],
         title: "Back-End",
         content:
           "Je suis à l'aise avec les notions comme MVC (Model-View-Controller), ou POO. Je n'ai pas autant d'expérience en back-end qu'en front-end, mais cela me permet de comprendre comment faire le lien entre ces deux structures si intriquement liées.",
       },
       {
+        icons: [slackCircleFilled, bxlDiscord],
         title: "Travail d'équipe",
         content:
           "Slack, Discord, Trello, j'ai pu découvrir les joies du travail d'équipe en remote, et vivre l'expérience d'un développement de projet en groupe.",
@@ -59,84 +74,77 @@ export default {
         "Baladez vous sur ce site en découvrant des pages inspirées de talentueux designs.",
       cards: [
         {
-          title: "Caligrafik : Design de ",
+          title: "Caligrafik",
           link: "/caligrafik",
           authorUrl: "https://dribbble.com/calinbalea",
           author: "@Calin Balea",
           img: "",
         },
         {
-          title: "Theodore Géricault - Le Louvre : Design de ",
+          title: "Theodore Géricault - Le Louvre",
           link: "/louvre",
           authorUrl: "https://dribbble.com/ADLOCON",
           author: "@Adrien Louis Constant",
           img: "",
         },
         {
-          title: "Beatriz Ramo Portfolio : Design de ",
+          title: "Beatriz Ramo Portfolio",
           link: "/beatriz-ramo",
           authorUrl: "https://dribbble.com/rmbrm",
           author: "@Anastasia",
           img: "",
         },
         {
-          title: "The song of the nightingales : Design de ",
+          title: "The song of the nightingales",
           link: "/nightingale",
           authorUrl: "https://dribbble.com/totodsgn",
           author: "@Thomas Monavon",
           img: "",
         },
         {
-          title: "Chatbot Service Concept : Design de ",
+          title: "Chatbot Service Concept",
           link: "/chatbox",
           authorUrl: "https://dribbble.com/Ankur_007",
           author: "@Ankur Tripathi",
           img: "",
         },
         {
-          title: "Chatbot Service Concept : Design de ",
-          link: "/chatbox",
-          authorUrl: "https://dribbble.com/Ankur_007",
-          author: "@Ankur Tripathi",
-          img: "",
-        },
-        {
-          title: "Essai Grid - Japon : Design de ",
+          title: "Essai Grid - Japon",
           link: "/japan",
           authorUrl: "https://dribbble.com/malfiksas",
           author: "@nuzarim",
           img: "",
         },
         {
-          title: "Music Player : Design de ",
+          title: "Music Player",
           link: "/music-player",
           authorUrl: "https://dribbble.com/mkcreates",
           author: "@Maksym",
           img: "",
         },
         {
-          title: "Liefde City Tribute : Design de ",
+          title: "Liefde City Tribute",
           link: "/liefde",
           authorUrl: "https://dribbble.com/rachel48",
           author: "@Rachelizmarvel",
           img: "",
         },
         {
-          title: "Pawfect : Design de ",
+          title: "Pawfect",
           link: "/pawfect",
           authorUrl: "https://dribbble.com/ishaank58",
           author: "@Ishaan Kumar",
           img: "",
         },
         {
-          title: "Art World : Design de ",
+          title: "Art World",
           link: "/art-world",
           authorUrl: "https://dribbble.com/Zihad-Islam",
           author: "@Zihad Islam",
           img: "",
         },
         {
-          title: "Craft Design Solutions : Design de ",
+          title: "Craft Design Solutions",
           link: "/crope",
           authorUrl: "https://dribbble.com/coolbabka",
           author: "@Katerina",
@@ -181,6 +189,6 @@ export default {
     message: {
       title: "Entrez votre message :",
       error: "M'envoyer un message vide, est-ce vraiment le but ?",
-    }
+    },
   },
 };

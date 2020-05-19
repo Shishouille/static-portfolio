@@ -4,6 +4,8 @@ import { portfolio as theme } from "../../themes";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
+import locale from "../../i18n/locale.fr";
+
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import "./layout.css";
@@ -31,11 +33,11 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <StyledLayout>
-      <Navigation />
-      <main>{children}</main>
-      <Footer />
-    </StyledLayout>
+      <StyledLayout>
+          <Navigation locale={locale.navigation} />
+        <main>{children}</main>
+        <Footer />
+      </StyledLayout>
   );
 };
 

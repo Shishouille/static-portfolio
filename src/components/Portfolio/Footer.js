@@ -4,7 +4,7 @@ import { portfolio as theme } from "../../themes";
 
 const StyledFooter = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 
 const Footer = () => {

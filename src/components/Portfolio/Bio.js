@@ -11,8 +11,14 @@ import linkedinFilled from "@iconify/icons-ant-design/linkedin-filled";
 const StyledBio = styled.article`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: ${theme.color.primary};
+  height: 100vh;
+  h1 {
+    font-size: 4em;
+  }
   nav {
+    margin: 2em 0;
     svg {
       margin-right: 1em;
     }
@@ -21,9 +27,10 @@ const StyledBio = styled.article`
     background: ${theme.color.secondary};
     color: white;
     border: none;
-    padding: 0.25em 0.75em;
+    padding: 0.5em 0.75em;
     border-radius: 0.3em;
     cursor: pointer;
+    text-transform: uppercase;
   }
   div {
     width: 50%;

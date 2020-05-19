@@ -38,7 +38,7 @@ module.exports = {
       options: {
         name: `Shirin Boomi - Portfolio`,
         short_name: `portfolio`,
-        start_url: `/fr/`,
+        start_url: `/`,
         background_color: `#032CB7`,
         theme_color: `#032CB7`,
         display: `minimal-ui`,

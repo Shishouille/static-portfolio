@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { portfolio as theme } from "../../themes";
 import { Link } from "gatsby";
 import { Link as Scroll } from "react-scroll";
 
@@ -8,9 +9,24 @@ const StyledNavigation = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: ${theme.color.primary};
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 1em;
+  a {
+    margin: 0 1em;
+    color: ${theme.color.primary};
+    text-decoration: none;
+  }
 `;
 
-const Navigation = () => {
+const Navigation = ({ locale }) => {
   return (
     <StyledNavigation>
       <div>
@@ -22,13 +38,13 @@ const Navigation = () => {
       </div>
       <div>
         <Scroll to="about" smooth>
-          About
+          {locale[0]}
         </Scroll>
         <Scroll to="whatIDo" smooth>
-          What I Do
+        {locale[1]}
         </Scroll>
         <Scroll to="projects" smooth>
-          Projects
+        {locale[2]}
         </Scroll>
       </div>
     </StyledNavigation>

@@ -74,7 +74,7 @@ const StyledJapan = styled.div`
       text-transform: uppercase;
       font-family: ${theme.fontFamily.text};
       font-size: 5em;
-      height: 75%;
+      height: 100%;
       margin-bottom: 0.5em;
       writing-mode: vertical-lr;
       text-orientation: upright;

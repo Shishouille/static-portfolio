@@ -5,9 +5,14 @@ import { Element } from "react-scroll";
 
 const StyledAbout = styled.article`
   background: ${theme.color.primary};
+  height: 100vh;
+  padding: 2em;
   color: white;
   display: flex;
   align-items: center;
+  h2 {
+    font-size: 2.5em;
+  }
   .about-text {
     width: 75%;
   }
@@ -28,11 +33,9 @@ const About = ({ locale }) => {
           <p>{locale.whyMe.content}</p>
         </article>
         <article className="about-imgs">
-          <img src="https://oclock.io/images/logo-short.66184eb7.svg" alt="" />
-          <img
-            src="https://www.univ-reims.fr/theme_front/theme_front_1/image/bandeau/logo.png"
-            alt=""
-          />
+          <div>
+            <p>J'ai fait ça et puis ça</p>
+          </div>
         </article>
       </StyledAbout>{" "}
     </Element>
