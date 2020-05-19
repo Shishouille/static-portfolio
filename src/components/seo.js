@@ -68,12 +68,17 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
   );
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `fr`,
   meta: [],
   description: ``,
 };

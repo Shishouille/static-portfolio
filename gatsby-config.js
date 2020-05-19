@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Static Training`,
-    description: `Front-end Static builds inspired by great designers`,
+    title: `Front-End Portfolio`,
+    description: `Discover my portfolio, especially if you want to hire ;)`,
     author: `Shirin Boomi`,
   },
   plugins: [
@@ -28,13 +28,19 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
     },
     {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "fr",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        name: `Shirin Boomi - Portfolio`,
+        short_name: `portfolio`,
+        start_url: `/fr/`,
+        background_color: `#032CB7`,
+        theme_color: `#032CB7`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

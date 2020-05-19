@@ -1,3 +1,15 @@
+const portfolio = {
+  color: {
+    primary: "#032CB7",
+    secondary: "#B7033C",
+    neutral: "white",
+  },
+  fontFamily: {
+    title: "'Raleway', sans-serif",
+    text: "'Ubuntu', sans-serif",
+  },
+};
+
 const caligrafik = {
   color: {
     primary: "#EBEBEB",
@@ -132,4 +144,5 @@ export {
   pawfect,
   artWorld,
   crope,
+  portfolio,
 };
