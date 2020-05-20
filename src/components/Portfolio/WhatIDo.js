@@ -3,8 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { portfolio as theme } from "../../themes";
 import { Element } from "react-scroll";
 
-import { Icon, InlineIcon } from '@iconify/react';
-
+import { Icon, InlineIcon } from "@iconify/react";
 
 const StyledWID = styled.div`
   color: ${theme.color.primary};
@@ -19,25 +18,30 @@ const StyledWID = styled.div`
   .cards-display {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     .card {
-      height: 20em;
+      min-height: 20em;
       text-align: center;
+      border-radius: .3em;
       padding: 1.5em 0.5em;
+      p {
+        width: 90%;
+        margin: auto;
+      }
       .icons-group {
         display: flex;
         justify-content: space-evenly;
         .icon {
-        border-radius: 50%;
-        background: white;
-        width: 3em;
-        height: 3em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+          border-radius: 50%;
+          background: white;
+          width: 3em;
+          height: 3em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 10px 15px 5px rgba(0, 20, 90, 1);
+        }
       }
-      }
-
     }
   }
   section {
@@ -46,9 +50,19 @@ const StyledWID = styled.div`
     width: 30%;
     margin: 1em;
   }
+  @media (max-width: 768px) {
+    .cards-display {
+      flex-direction: column;
+      .card {
+        height: auto;
+        width: 100%;
+        margin: 1em;
+      }
+    }
+  }
 `;
 
-const WhatIDo = ({ locale }) => {
+const WhatIDo = ({ locale, isVisible }) => {
   return (
     <Element name="whatIDo">
       <StyledWID>
@@ -56,11 +70,15 @@ const WhatIDo = ({ locale }) => {
           <h2 className="title"> {locale.first}</h2>
           <div className="cards-display">
             {locale.primary.map(card => (
-              <section className="card">
+              <section className={isVisible ? 'card animate__animated animate__pulse' : 'card'}>
                 <div className="icons-group">
-                  {card.icons.map((icon) => (
-                    <div className="icon">
-                      <Icon icon={icon} color={theme.color.primary} height="1.5em" />
+                  {card.icons.map(icon => (
+                    <div className="icon floating">
+                      <Icon
+                        icon={icon}
+                        color={theme.color.primary}
+                        height="1.5em"
+                      />
                     </div>
                   ))}
                 </div>
@@ -76,11 +94,15 @@ const WhatIDo = ({ locale }) => {
           <h3 className="title">{locale.second}</h3>
           <div className="cards-display">
             {locale.secondary.map(card => (
-              <section className="card">
+              <section className={isVisible ? 'card animate__animated animate__pulse' : 'card'}>
                 <div className="icons-group">
-                  {card.icons.map((icon) => (
-                    <div className="icon">
-                      <Icon icon={icon} color={theme.color.primary} height="1.5em" />
+                  {card.icons.map(icon => (
+                    <div className="icon floating">
+                      <Icon
+                        icon={icon}
+                        color={theme.color.primary}
+                        height="1.5em"
+                      />
                     </div>
                   ))}
                 </div>

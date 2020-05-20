@@ -1,4 +1,5 @@
 import React from "react";
+import TrackVisibility from 'react-on-screen';
 import { Link } from "gatsby";
 
 import locale from "../i18n/locale.fr";
@@ -14,13 +15,21 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Portfolio - Accueil" />
+  <Layout locale={locale.navigation}>
+    <SEO title="Shirin Boomi - Développeur front-end" />
     <Bio locale={locale.bio} />
-    <About locale={locale.about} />
+    <TrackVisibility partialVisibility>
+      <About locale={locale.about} />
+      </TrackVisibility>
+      <TrackVisibility partialVisibility>
     <WhatIDo locale={locale.whatIDo} />
+    </TrackVisibility>
+    <TrackVisibility partialVisibility>
     <Projects locale={locale.projects} />
+    </TrackVisibility>
+    <TrackVisibility partialVisibility>
     <ContactForm locale={locale.contactForm} />
+    </TrackVisibility>
   </Layout>
 );
 

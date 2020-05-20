@@ -1038,6 +1038,11 @@
   resolved "https://registry.yarnpkg.com/@iconify/icons-fa-brands/-/icons-fa-brands-1.0.12.tgz#06a6a7958c6d1d1d4c12f57ed6b2b5bc09c857ed"
   integrity sha512-scurBl3NmrZ+GH7L1NnBkTW6t+Ek10QpQAwI5zOw0eSHh8TsVzfyxhyQI2lS+tv9qyTdWaiJK6mFLjNA34wq3w==
 
+"@iconify/icons-feather@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-feather/-/icons-feather-1.0.9.tgz#bc6fc4928511f583e2879b9d8ad418c38ef7a1d3"
+  integrity sha512-74LTZsZp9y8Qd+fsOTG4SRTp50pW6f97VB2i4G5UGoRTA3GIe9BMV9Ue1rihEgBAWRuN761CgVLkWXBdxyHazA==
+
 "@iconify/icons-ic@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@iconify/icons-ic/-/icons-ic-1.0.11.tgz#73cd387ae1da39c38134fdabc96db44e48d37268"
@@ -1063,10 +1068,20 @@
   resolved "https://registry.yarnpkg.com/@iconify/icons-mdi/-/icons-mdi-1.0.104.tgz#3c68778f2dd9a7f36d4ac2e5f7a6fe3a9bb0e59f"
   integrity sha512-fLLjJLTTkTLOM73vsAtkpKM0vXDmOvB3xlaszcNXmYEK0TiFx3ZUe3QGmvPMgKr+J0Q/uwlRErdmT2HW8VQLpg==
 
+"@iconify/icons-noto@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-noto/-/icons-noto-1.0.10.tgz#18c42a76fc95a58cefadf8a7b5a1c2121553c577"
+  integrity sha512-3aJm9s9N977Uv9q/7Zo4iMfQ+prtGUNc16JxH3e+sPno4gj7hmToH0Mot02yqThcZRo9y0mzpyM2/Qdnc9V/0A==
+
 "@iconify/icons-oi@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@iconify/icons-oi/-/icons-oi-1.0.5.tgz#a7fdb4dc16acac3c221fe2b8aea6db709b61b4a5"
   integrity sha512-OPOdSB/Kqy4wJaFOEdSvsgJIbwCB5AzPmJLvL8jpV+f7EPctbJf8KqXfzhLWXRC4sP3rU6aoqNapmjNnqzAUbA==
+
+"@iconify/icons-simple-icons@^1.0.33":
+  version "1.0.33"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-simple-icons/-/icons-simple-icons-1.0.33.tgz#947f72b37adc083a2d6508fab1ea8b1826ffc766"
+  integrity sha512-hJAM8EWItv5ingZzS0diN06CktqHyF1G0XTLKepQGQVchOg1RBZkU/uxbJAIcfXb//k3gLWQbUD1+gkY0tFvHg==
 
 "@iconify/icons-uil@^1.0.12":
   version "1.0.12"
@@ -3414,6 +3429,11 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
+
+cogo-toast@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/cogo-toast/-/cogo-toast-4.2.3.tgz#5f91ce8e55c799f74d5e9ba1e39081b148b07f43"
+  integrity sha512-Lp/lPk493MLtkgqHboVJXb5frvLJqUDpIqLh6uCMcNecw0/shikDG+DGsjvmPe5qmorRwxe+6JgfKobRrcvhZQ==
 
 collapse-white-space@^1.0.0, collapse-white-space@^1.0.2:
   version "1.0.6"
@@ -10522,7 +10542,7 @@ prompts@^2.3.2:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10834,6 +10854,15 @@ react-fast-compare@^2.0.4:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-headroom@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-headroom/-/react-headroom-3.0.0.tgz#6d74102ccc04b060269ddee6e5b788f476e0eca6"
+  integrity sha512-iVRDowuHHvIBuOx/IoEg2uPqQl8myGgtth55IMZ6SdJkJ/NIz9VUMIC9bsfGU5GLc6AzksFRKQmuaDftjqjzMw==
+  dependencies:
+    prop-types "^15.5.8"
+    raf "^3.3.0"
+    shallowequal "^1.1.0"
+
 react-helmet@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.0.0.tgz#fcb93ebaca3ba562a686eb2f1f9d46093d83b5f8"
@@ -10872,6 +10901,15 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-on-screen@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-on-screen/-/react-on-screen-2.1.1.tgz#c66d78a8187457262d57f71766d1733f875e727a"
+  integrity sha512-mV2Ntd61ncJ9nBsXF/p5Y6lMDGTTwXTGvHaal4b7O1eX3GwSwDXKAe7KKXTf/4Oc1BuYc7j5Sy0XdT89w/MjDA==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.6.0"
+    shallowequal "^1.0.2"
 
 react-reconciler@^0.24.0:
   version "0.24.0"
@@ -11680,7 +11718,7 @@ shallow-equal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
-shallowequal@^1.1.0:
+shallowequal@^1.0.2, shallowequal@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==

@@ -7,13 +7,31 @@ import { Icon, InlineIcon } from "@iconify/react";
 import githubFilled from "@iconify/icons-ant-design/github-filled";
 import twitterCircleFilled from "@iconify/icons-ant-design/twitter-circle-filled";
 import linkedinFilled from "@iconify/icons-ant-design/linkedin-filled";
+import mailIcon from '@iconify/icons-feather/mail';
+
+
+import photo from "../../images/portfolio/avatar.jpeg";
+import cv from "../../images/portfolio/CV.png";
 
 const StyledBio = styled.article`
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: ${theme.color.primary};
-  height: 100vh;
+  min-height: 100vh;
+  margin: 1em 0;
+  .bio-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      img {
+    box-shadow: 0px 10px 15px 5px rgba(125, 125, 125, .75);
+    border-radius: 1em;
+    width: 50%;
+    margin: auto;
+  }
+  }
+
   h1 {
     font-size: 4em;
   }
@@ -21,27 +39,69 @@ const StyledBio = styled.article`
     margin: 2em 0;
     svg {
       margin-right: 1em;
+      transition: opacity .2s ease;
+      &:hover {
+        opacity: .7;
+        animation: heartBeat;
+        animation-duration: 1s;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    .cv {
+    border: 2px solid ${theme.color.primary};
+    color: ${theme.color.primary};
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background .2s ease-in;
+    &:hover {
+      background: ${theme.color.primary};
+      color: white;
     }
   }
   button {
     background: ${theme.color.secondary};
     color: white;
-    border: none;
+    border: 2px solid ${theme.color.secondary};
     padding: 0.5em 0.75em;
     border-radius: 0.3em;
     cursor: pointer;
     text-transform: uppercase;
+    transition: background .2s ease-in;
+    &:hover {
+      background: white;
+      color: ${theme.color.secondary};
+    }
   }
+  }
+
   div {
     width: 50%;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    h1 {
+      font-size: 2em;
+    }
+    div {
+      width: 100%;
+      margin: 1.5em;
+    }
   }
 `;
 const Bio = ({ locale }) => {
   return (
     <Element name="bio">
-      <StyledBio>
-        <div>
-          <img src="" alt="" />
+      <StyledBio className="animate__animated animate__fadeIn">
+        <div className="bio-pic">
+          <img src={photo} alt="" />
         </div>
         <div>
           <section>
@@ -51,21 +111,28 @@ const Bio = ({ locale }) => {
                 <Icon
                   icon={githubFilled}
                   color={theme.color.primary}
-                  width="1.5em"
+                  width="3em"
                 />
               </a>
               <a href="https://www.linkedin.com/in/shirin-boomi/">
                 <Icon
                   icon={linkedinFilled}
                   color={theme.color.primary}
-                  width="1.5em"
+                  width="3em"
                 />
               </a>
               <a href="https://twitter.com/BoomiShirin">
                 <Icon
                   icon={twitterCircleFilled}
                   color={theme.color.primary}
-                  width="1.5em"
+                  width="3em"
+                />
+              </a>
+              <a href="mailto:shirin.boomi.dev@gmail.com">
+                <Icon
+                  icon={mailIcon}
+                  color={theme.color.primary}
+                  width="3em"
                 />
               </a>
             </nav>
@@ -73,11 +140,16 @@ const Bio = ({ locale }) => {
           <section>
             <h2>{locale.subtitle}</h2>
             <p>{locale.content}</p>
+            <nav className="buttons">
             <button>
               <Scroll to="contact" smooth>
                 {locale.button}
               </Scroll>
             </button>
+            <a className="cv" href={cv} download>
+              {locale.cv}
+            </a>
+            </nav>
           </section>
         </div>
       </StyledBio>

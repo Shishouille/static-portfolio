@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Front-End Portfolio`,
-    description: `Discover my portfolio, especially if you want to hire ;)`,
+    title: `Shirin Boomi, Développeur front-end`,
+    description: `Découvrez mon portfolio en développement web. Je suis une développeuse front-end en recherche active.`,
     author: `Shirin Boomi`,
   },
   plugins: [
