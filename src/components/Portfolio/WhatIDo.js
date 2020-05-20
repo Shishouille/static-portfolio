@@ -24,6 +24,9 @@ const StyledWID = styled.div`
       text-align: center;
       border-radius: .3em;
       padding: 1.5em 0.5em;
+      h3 {
+        padding: 1em 0;
+      }
       p {
         width: 90%;
         margin: auto;

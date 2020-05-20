@@ -255,6 +255,9 @@ export default {
     error: {
       content: "An error has occured. Please try again.",
     },
+    button: {
+      content: "Send",
+    }
   },
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, createGlobalStyle } from "styled-components";
 import { portfolio as theme } from "../../themes";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
@@ -41,6 +41,23 @@ to {
   transform: translate(0, -1em); 
   }`;
 
+const GlobalStyle = createGlobalStyle`
+  * {
+  scrollbar-width: thin;
+  scrollbar-color: ${theme.color.primary};
+  }
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: ${theme.color.primary};
+    border-radius: .5em;
+  }
+`;
+
 const StyledLayout = styled.div`
   font-family: ${theme.fontFamily.text};
   color: ${theme.fontFamily.primary};
@@ -81,6 +98,7 @@ const Layout = ({ children, locale }) => {
 
   return (
     <StyledLayout>
+      <GlobalStyle />
       <Navigation locale={locale} />
       <main>{children}</main>
       <Footer />

@@ -5,6 +5,9 @@ import styled, { keyframes } from "styled-components";
 import { portfolio as theme } from "../../themes";
 import { Element } from "react-scroll";
 import { useForm } from "react-hook-form";
+import { Icon, InlineIcon } from '@iconify/react';
+import sendAltFilled from '@iconify/icons-carbon/send-alt-filled';
+
 
 const StyledForm = styled.form`
   width: 80%;
@@ -21,6 +24,7 @@ const StyledForm = styled.form`
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+    box-shadow: 0px 10px 15px 5px rgba(0, 20, 90, .2);
     textarea {
       border: none;
       border-bottom: 2px solid ${theme.color.primary};
@@ -147,7 +151,7 @@ const ContactForm = ({ locale, isVisible }) => {
               {errors.message && <span>{locale.message.error}</span>}
             </div>
             <div className="form-submit">
-              <button type="submit">Envoyer</button>
+              <button type="submit"><InlineIcon icon={sendAltFilled} />{locale.button.content}</button>
             </div>
           </div>
         </div>

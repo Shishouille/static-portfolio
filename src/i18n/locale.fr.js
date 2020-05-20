@@ -255,5 +255,8 @@ export default {
     error: {
       content: "Une erreur s'est produite. Merci de retenter le coup...",
     },
+    button: {
+      content: "Envoyer",
+    }
   },
 };

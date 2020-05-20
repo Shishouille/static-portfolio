@@ -8,6 +8,8 @@ import githubFilled from "@iconify/icons-ant-design/github-filled";
 import twitterCircleFilled from "@iconify/icons-ant-design/twitter-circle-filled";
 import linkedinFilled from "@iconify/icons-ant-design/linkedin-filled";
 import mailIcon from '@iconify/icons-feather/mail';
+import messageFilled from '@iconify/icons-ant-design/message-filled';
+import faceSatisfiedFilled from '@iconify/icons-carbon/face-satisfied-filled';
 
 
 import photo from "../../images/portfolio/avatar.jpeg";
@@ -143,10 +145,12 @@ const Bio = ({ locale }) => {
             <nav className="buttons">
             <button>
               <Scroll to="contact" smooth>
+              <InlineIcon icon={messageFilled} hFlip />
                 {locale.button}
               </Scroll>
             </button>
             <a className="cv" href={cv} download>
+            <InlineIcon icon={faceSatisfiedFilled} />
               {locale.cv}
             </a>
             </nav>

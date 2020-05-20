@@ -25,6 +25,9 @@ const StyledNavigation = styled.header`
     text-decoration: none;
     cursor: pointer;
     width: fit-content;
+    &:hover {
+      color: ${theme.color.secondary};
+    }
   }
   .is-active {
     position: relative;
