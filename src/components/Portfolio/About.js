@@ -39,16 +39,15 @@ const StyledAbout = styled.article`
     text-align: center;
     .hobbies-content {
       margin-top: 2em;
-        h4 {
-      font-size: 2em;
+      h4 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 3em;
+        padding: 1em;
+        line-height: 1.5em;
+      }
     }
-    p {
-      font-size: 3em;
-      padding: 1em;
-      line-height: 1.5em;
-    } 
-    }
- 
   }
   .icons-group {
     display: flex;
@@ -81,7 +80,8 @@ const StyledAbout = styled.article`
     h1 {
       font-size: 2em;
     }
-    .about-text, .about-grid {
+    .about-text,
+    .about-grid {
       width: 100%;
       margin: 1.5em;
     }
@@ -93,7 +93,7 @@ const StyledBar = styled.div`
   height: 0.5em;
   width: 25%;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 `;
 
 const About = ({ locale, isVisible }) => {
@@ -102,33 +102,54 @@ const About = ({ locale, isVisible }) => {
   return (
     <Element name="about">
       <StyledAbout>
-        <article className={isVisible ? 'about-text animate__animated animate__slideInLeft' : 'about-text animate__animated animate__slideOutLeft'}>
+        <article
+          className={
+            isVisible
+              ? "about-text animate__animated animate__slideInLeft"
+              : "about-text"
+          }
+        >
           <section>
-          <h2>{locale.aboutMe.title}</h2>
-          <p>{locale.aboutMe.content}</p>
+            <h2>{locale.aboutMe.title}</h2>
+            <p>{locale.aboutMe.content}</p>
           </section>
           <section>
-          <h2>{locale.whyMe.title}</h2>
-          <p>{locale.whyMe.content}</p>
+            <h2>{locale.whyMe.title}</h2>
+            <p>{locale.whyMe.content}</p>
           </section>
         </article>
-        <article className={isVisible ? 'about-grid animate__animated animate__slideInRight' : 'about-grid animate__animated animate__slideOutRight'}>
+        <article
+          className={
+            isVisible
+              ? "about-grid animate__animated animate__slideInRight"
+              : "about-grid"
+          }
+        >
           <div className="icons-group">
             <div
               className={topic === "studies" ? "icon floating" : "icon"}
-              onClick={() => {setTopic("studies"); setIndex(0);}}
+              onClick={() => {
+                setTopic("studies");
+                setIndex(0);
+              }}
             >
               <Icon icon={womanStudent} height="1.5em" />
             </div>
             <div
               className={topic === "hobbies" ? "icon floating" : "icon"}
-              onClick={() => {setTopic("hobbies"); setIndex(0);}}
+              onClick={() => {
+                setTopic("hobbies");
+                setIndex(0);
+              }}
             >
               <Icon icon={womanArtist} height="1.5em" />
             </div>
             <div
               className={topic === "langs" ? "icon floating" : "icon"}
-              onClick={() => {setTopic("langs"); setIndex(0);}}
+              onClick={() => {
+                setTopic("langs");
+                setIndex(0);
+              }}
             >
               <Icon icon={womanTeacher} height="1.5em" />
             </div>

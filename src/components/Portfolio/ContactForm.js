@@ -5,9 +5,8 @@ import styled, { keyframes } from "styled-components";
 import { portfolio as theme } from "../../themes";
 import { Element } from "react-scroll";
 import { useForm } from "react-hook-form";
-import { Icon, InlineIcon } from '@iconify/react';
-import sendAltFilled from '@iconify/icons-carbon/send-alt-filled';
-
+import { Icon, InlineIcon } from "@iconify/react";
+import sendAltFilled from "@iconify/icons-carbon/send-alt-filled";
 
 const StyledForm = styled.form`
   width: 80%;
@@ -24,7 +23,7 @@ const StyledForm = styled.form`
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    box-shadow: 0px 10px 15px 5px rgba(0, 20, 90, .2);
+    box-shadow: 0px 10px 15px 5px rgba(0, 20, 90, 0.2);
     textarea {
       border: none;
       border-bottom: 2px solid ${theme.color.primary};
@@ -42,7 +41,7 @@ const StyledForm = styled.form`
         border-bottom: 2px solid ${theme.color.primary};
         &[placeholder] {
           color: ${theme.color.primary};
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }
@@ -56,11 +55,14 @@ const StyledForm = styled.form`
       color: white;
       padding: 0.5em 0.75em;
       border: none;
-      border-radius: .3em;
+      border-radius: 0.3em;
       text-transform: uppercase;
+      svg {
+        margin: 0 0.5em;
+      }
       &:hover {
         animation: pulse;
-        animation-duration: .5s;
+        animation-duration: 0.5s;
       }
     }
   }
@@ -95,7 +97,10 @@ const ContactForm = ({ locale, isVisible }) => {
   };
   return (
     <Element name="contact">
-      <StyledForm onSubmit={handleSubmit(onSubmit)} className={isVisible ? 'card animate__animated animate__fadeIn' : ''}>
+      <StyledForm
+        onSubmit={handleSubmit(onSubmit)}
+        className={isVisible ? "card animate__animated animate__fadeIn" : ""}
+      >
         <h2>N'hésitez pas à me contacter</h2>
         <div className="form-display">
           <div className="group">
@@ -151,7 +156,10 @@ const ContactForm = ({ locale, isVisible }) => {
               {errors.message && <span>{locale.message.error}</span>}
             </div>
             <div className="form-submit">
-              <button type="submit"><InlineIcon icon={sendAltFilled} />{locale.button.content}</button>
+              <button type="submit">
+                <InlineIcon icon={sendAltFilled} />
+                {locale.button.content}
+              </button>
             </div>
           </div>
         </div>

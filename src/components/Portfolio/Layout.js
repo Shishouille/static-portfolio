@@ -19,28 +19,6 @@ to {
   transform: translate(0px, 0px); 
   }`;
 
-const slideIn = keyframes`
-from { 
-  transform: translate(0,  -1em); 
-  }
-65% { 
-  transform: translate(0, -.5em); 
-    }
-to { 
-  transform: translate(0, 0); 
-  }`;
-
-const slideOut = keyframes`
-from { 
-  transform: translate(0,  0); 
-  }
-65% { 
-  transform: translate(0, -.5em); 
-    }
-to { 
-  transform: translate(0, -1em); 
-  }`;
-
 const GlobalStyle = createGlobalStyle`
   * {
   scrollbar-width: thin;
@@ -67,16 +45,7 @@ const StyledLayout = styled.div`
   h4 {
     font-family: ${theme.fontFamily.title};
   }
-  .in {
-    animation-name: ${slideIn};
-    animation-duration: 1s;
-    animation-timing-function: ease;
-  }
-  .out {
-    animation-name: ${slideOut};
-    animation-duration: 1s;
-    animation-timing-function: ease;
-  }
+
   .floating {
     animation-name: ${floating};
     animation-duration: 5s;

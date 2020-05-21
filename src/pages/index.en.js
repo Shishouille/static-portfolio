@@ -1,5 +1,5 @@
 import React from "react";
-import TrackVisibility from 'react-on-screen';
+import TrackVisibility from "react-on-screen";
 import { Link } from "gatsby";
 
 import locale from "../i18n/locale.en";
@@ -20,15 +20,15 @@ const IndexPage = () => (
     <Bio locale={locale.bio} />
     <TrackVisibility partialVisibility>
       <About locale={locale.about} />
-      </TrackVisibility>
-      <TrackVisibility partialVisibility>
-    <WhatIDo locale={locale.whatIDo} />
     </TrackVisibility>
     <TrackVisibility partialVisibility>
-    <Projects locale={locale.projects} />
+      <WhatIDo locale={locale.whatIDo} />
     </TrackVisibility>
     <TrackVisibility partialVisibility>
-    <ContactForm locale={locale.contactForm} />
+      <Projects locale={locale.projects} />
+    </TrackVisibility>
+    <TrackVisibility partialVisibility>
+      <ContactForm locale={locale.contactForm} />
     </TrackVisibility>
   </Layout>
 );

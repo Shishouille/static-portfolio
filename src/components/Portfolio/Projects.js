@@ -1,4 +1,6 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
+import Tilt from "react-parallax-tilt";
 import styled, { keyframes } from "styled-components";
 import { portfolio as theme } from "../../themes";
 import { Link } from "gatsby";
@@ -16,21 +18,44 @@ const StyledProjects = styled.div`
     font-size: 2.5em;
   }
   p {
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
   article {
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
   .card-group {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
+    .card-infos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-tags {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      svg {
+        margin: 0 0.5em;
+      }
+    }
+    .card-lang {
+      color: ${theme.color.primary};
+      text-align: start;
+      padding: 0 1em;
+    }
     .card {
       margin: 1em;
+      border-radius: 0.3em;
+      padding-bottom: 1em;
       text-align: center;
       background: white;
-      width: 25%;
+      width: 100%;
       box-shadow: 0px 10px 15px 5px rgba(0, 20, 90, 1);
+      &:hover {
+        font-weight: bold;
+      }
       .design-author {
         color: ${theme.color.primary};
       }
@@ -54,6 +79,7 @@ const StyledProjects = styled.div`
 `;
 
 const Projects = ({ locale, isVisible }) => {
+  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
   return (
     <Element name="projects">
       <StyledProjects>
@@ -64,12 +90,21 @@ const Projects = ({ locale, isVisible }) => {
           <p>{locale.intern.text}</p>
           <section className="card-group">
             {locale.intern.cards.map(card => (
-              <div className={isVisible ? 'card animate__animated animate__fadeInUp' : 'card'}>
-                <Link to={card.link}>{card.title}</Link>
-                <a className="design-author" href={card.authorUrl}>
-                  {card.author}
-                </a>
-              </div>
+              <Tilt perspective={300} tiltEnable={isBigScreen}>
+                <div
+                  className={
+                    isVisible
+                      ? "card animate__animated animate__fadeInUp"
+                      : "card"
+                  }
+                >
+                  <p className="card-lang">{card.lang}</p>
+                  <Link to={card.link}>{card.title}</Link>
+                  <a className="design-author" href={card.authorUrl}>
+                    {card.author}
+                  </a>
+                </div>
+              </Tilt>
             ))}
           </section>
         </article>
@@ -78,7 +113,28 @@ const Projects = ({ locale, isVisible }) => {
           <p>{locale.extern.subtitle}</p>
           <section className="card-group">
             {locale.extern.cards.map(card => (
-              <div className={isVisible ? 'card animate__animated animate__fadeInUp' : 'card'}>
+              <Tilt perspective={300} tiltEnable={isBigScreen}>
+                <div
+                  className={
+                    isVisible
+                      ? "card animate__animated animate__fadeInUp"
+                      : "card"
+                  }
+                >
+                  <div className="card-infos">
+                    <p className="card-lang">{card.lang}</p>
+                    <div className="card-tags">
+                      {card.tags.map(icon => (
+                        <Icon
+                          icon={icon}
+                          color={theme.color.primary}
+                          height="1.5em"
+                        />
+                      ))}
+                  
+                  </div> 
+                </div>
+                
                 <a href={card.github}>
                   <Icon
                     icon={githubFilled}
@@ -88,6 +144,7 @@ const Projects = ({ locale, isVisible }) => {
                 </a>
                 <a href={card.url}>{card.title}</a>
               </div>
+              </Tilt>
             ))}
           </section>
         </article>

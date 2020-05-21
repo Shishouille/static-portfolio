@@ -6,8 +6,8 @@ import slackCircleFilled from "@iconify/icons-ant-design/slack-circle-filled";
 import bxlDiscord from "@iconify/icons-bx/bxl-discord";
 import phpIcon from "@iconify/icons-cib/php";
 import mysqlIcon from "@iconify/icons-cib/mysql";
-import typescriptIcon from '@iconify/icons-cib/typescript';
-import styledComponents from '@iconify/icons-simple-icons/styled-components';
+import typescriptIcon from "@iconify/icons-cib/typescript";
+import styledComponents from "@iconify/icons-simple-icons/styled-components";
 
 export default {
   navigation: ["Bio", "About", "What I Do", "Projects", "Contact"],
@@ -214,7 +214,7 @@ export default {
         {
           title: "Opav - Infos sur l'opéra",
           url: "https://vivalopera.now.sh/",
-          github : "https://github.com/Shishouille/opav",
+          github: "https://github.com/Shishouille/opav",
           img: "",
         },
         {
@@ -250,14 +250,14 @@ export default {
       content: "Sending Message...",
     },
     success: {
-      content: "Message Sent ! Thanks a lot for your time. I'll catch you up soon.",
+      content:
+        "Message Sent ! Thanks a lot for your time. I'll catch you up soon.",
     },
     error: {
       content: "An error has occured. Please try again.",
     },
     button: {
       content: "Send",
-    }
+    },
   },
 };
-

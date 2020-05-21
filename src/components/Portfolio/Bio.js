@@ -7,10 +7,9 @@ import { Icon, InlineIcon } from "@iconify/react";
 import githubFilled from "@iconify/icons-ant-design/github-filled";
 import twitterCircleFilled from "@iconify/icons-ant-design/twitter-circle-filled";
 import linkedinFilled from "@iconify/icons-ant-design/linkedin-filled";
-import mailIcon from '@iconify/icons-feather/mail';
-import messageFilled from '@iconify/icons-ant-design/message-filled';
-import faceSatisfiedFilled from '@iconify/icons-carbon/face-satisfied-filled';
-
+import mailIcon from "@iconify/icons-feather/mail";
+import messageFilled from "@iconify/icons-ant-design/message-filled";
+import faceSatisfiedFilled from "@iconify/icons-carbon/face-satisfied-filled";
 
 import photo from "../../images/portfolio/avatar.jpeg";
 import cv from "../../images/portfolio/CV.png";
@@ -26,12 +25,12 @@ const StyledBio = styled.article`
     display: flex;
     justify-content: center;
     align-items: center;
-      img {
-    box-shadow: 0px 10px 15px 5px rgba(125, 125, 125, .75);
-    border-radius: 1em;
-    width: 50%;
-    margin: auto;
-  }
+    img {
+      box-shadow: 0px 10px 15px 5px rgba(125, 125, 125, 0.75);
+      border-radius: 1em;
+      width: 50%;
+      margin: auto;
+    }
   }
 
   h1 {
@@ -41,9 +40,9 @@ const StyledBio = styled.article`
     margin: 2em 0;
     svg {
       margin-right: 1em;
-      transition: opacity .2s ease;
+      transition: opacity 0.2s ease;
       &:hover {
-        opacity: .7;
+        opacity: 0.7;
         animation: heartBeat;
         animation-duration: 1s;
       }
@@ -53,34 +52,35 @@ const StyledBio = styled.article`
     display: flex;
     width: 70%;
     justify-content: space-between;
+    text-align: center;
     .cv {
-    border: 2px solid ${theme.color.primary};
-    color: ${theme.color.primary};
-    text-decoration: none;
-    padding: 0.5em 0.75em;
-    border-radius: 0.3em;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background .2s ease-in;
-    &:hover {
-      background: ${theme.color.primary};
+      border: 2px solid ${theme.color.primary};
+      color: ${theme.color.primary};
+      text-decoration: none;
+      padding: 0.5em 0.75em;
+      border-radius: 0.3em;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.2s ease-in;
+      &:hover {
+        background: ${theme.color.primary};
+        color: white;
+      }
+    }
+    button {
+      background: ${theme.color.secondary};
       color: white;
+      border: 2px solid ${theme.color.secondary};
+      padding: 0.5em 0.75em;
+      border-radius: 0.3em;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.2s ease-in;
+      &:hover {
+        background: white;
+        color: ${theme.color.secondary};
+      }
     }
-  }
-  button {
-    background: ${theme.color.secondary};
-    color: white;
-    border: 2px solid ${theme.color.secondary};
-    padding: 0.5em 0.75em;
-    border-radius: 0.3em;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background .2s ease-in;
-    &:hover {
-      background: white;
-      color: ${theme.color.secondary};
-    }
-  }
   }
 
   div {
@@ -95,6 +95,10 @@ const StyledBio = styled.article`
     div {
       width: 100%;
       margin: 1.5em;
+    }
+    .buttons {
+      justify-content: space-around;
+      width: 100%;
     }
   }
 `;
@@ -131,11 +135,7 @@ const Bio = ({ locale }) => {
                 />
               </a>
               <a href="mailto:shirin.boomi.dev@gmail.com">
-                <Icon
-                  icon={mailIcon}
-                  color={theme.color.primary}
-                  width="3em"
-                />
+                <Icon icon={mailIcon} color={theme.color.primary} width="3em" />
               </a>
             </nav>
           </section>
@@ -143,16 +143,16 @@ const Bio = ({ locale }) => {
             <h2>{locale.subtitle}</h2>
             <p>{locale.content}</p>
             <nav className="buttons">
-            <button>
-              <Scroll to="contact" smooth>
-              <InlineIcon icon={messageFilled} hFlip />
-                {locale.button}
-              </Scroll>
-            </button>
-            <a className="cv" href={cv} download>
-            <InlineIcon icon={faceSatisfiedFilled} />
-              {locale.cv}
-            </a>
+              <button>
+                <Scroll to="contact" smooth>
+                  <InlineIcon icon={messageFilled} hFlip />
+                  {locale.button}
+                </Scroll>
+              </button>
+              <a className="cv" href={cv} download>
+                <InlineIcon icon={faceSatisfiedFilled} />
+                {locale.cv}
+              </a>
             </nav>
           </section>
         </div>

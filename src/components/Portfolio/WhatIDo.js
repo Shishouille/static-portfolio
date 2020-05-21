@@ -22,7 +22,7 @@ const StyledWID = styled.div`
     .card {
       min-height: 20em;
       text-align: center;
-      border-radius: .3em;
+      border-radius: 0.3em;
       padding: 1.5em 0.5em;
       h3 {
         padding: 1em 0;
@@ -73,7 +73,11 @@ const WhatIDo = ({ locale, isVisible }) => {
           <h2 className="title"> {locale.first}</h2>
           <div className="cards-display">
             {locale.primary.map(card => (
-              <section className={isVisible ? 'card animate__animated animate__pulse' : 'card'}>
+              <section
+                className={
+                  isVisible ? "card animate__animated animate__pulse" : "card"
+                }
+              >
                 <div className="icons-group">
                   {card.icons.map(icon => (
                     <div className="icon floating">
@@ -97,7 +101,11 @@ const WhatIDo = ({ locale, isVisible }) => {
           <h3 className="title">{locale.second}</h3>
           <div className="cards-display">
             {locale.secondary.map(card => (
-              <section className={isVisible ? 'card animate__animated animate__pulse' : 'card'}>
+              <section
+                className={
+                  isVisible ? "card animate__animated animate__pulse" : "card"
+                }
+              >
                 <div className="icons-group">
                   {card.icons.map(icon => (
                     <div className="icon floating">

@@ -7,6 +7,7 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-around;
   color: ${theme.color.primary};
+  padding-bottom: 2em;
   .name {
     cursor: pointer;
     text-transform: initial;
@@ -18,7 +19,7 @@ const StyledFooter = styled.footer`
     color: ${theme.color.primary};
     &:hover {
       animation: pulse;
-      animation-duration: .5s;
+      animation-duration: 0.5s;
     }
     &:active {
       color: ${theme.color.secondary};
@@ -32,8 +33,8 @@ const Footer = () => {
       <a href="https://twitter.com/BoomiShirin">Twitter</a>
       <a href="https://www.linkedin.com/in/shirin-boomi/">LinkedIn</a>
       <Scroll className="name" to="bio" smooth spy>
-      Shirin Boomi
-        </Scroll>
+        Shirin Boomi
+      </Scroll>
       <a href="https://github.com/Shishouille">Github</a>
       <a href="mailto:shirin.boomi.dev@gmail.com">Mail</a>
     </StyledFooter>
