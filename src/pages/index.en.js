@@ -16,7 +16,7 @@ import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout locale={locale.navigation}>
-    <SEO title="Shirin Boomi - Front-end Developper" />
+    <SEO title="Shirin Boomi - Front-end Developper" lang="en" />
     <Bio locale={locale.bio} />
     <TrackVisibility partialVisibility>
       <About locale={locale.about} />
