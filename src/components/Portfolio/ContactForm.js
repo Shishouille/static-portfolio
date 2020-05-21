@@ -101,7 +101,7 @@ const ContactForm = ({ locale, isVisible }) => {
         onSubmit={handleSubmit(onSubmit)}
         className={isVisible ? "card animate__animated animate__fadeIn" : ""}
       >
-        <h2>N'hésitez pas à me contacter</h2>
+        <h2>{locale.title}</h2>
         <div className="form-display">
           <div className="group">
             <div className="input-group">

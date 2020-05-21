@@ -8,6 +8,8 @@ import phpIcon from "@iconify/icons-cib/php";
 import mysqlIcon from "@iconify/icons-cib/mysql";
 import typescriptIcon from "@iconify/icons-cib/typescript";
 import styledComponents from "@iconify/icons-simple-icons/styled-components";
+import nextjsIcon from "@iconify/icons-logos/nextjs";
+import symfonyIcon from "@iconify/icons-cib/symfony";
 
 export default {
   navigation: ["Bio", "About", "What I Do", "Projects", "Contact"],
@@ -121,6 +123,7 @@ export default {
           link: "/caligrafik",
           authorUrl: "https://dribbble.com/calinbalea",
           author: "@Calin Balea",
+          lang: "EN",
           img: "",
         },
         {
@@ -128,6 +131,7 @@ export default {
           link: "/louvre",
           authorUrl: "https://dribbble.com/ADLOCON",
           author: "@Adrien Louis Constant",
+          lang: "FR",
           img: "",
         },
         {
@@ -135,6 +139,7 @@ export default {
           link: "/beatriz-ramo",
           authorUrl: "https://dribbble.com/rmbrm",
           author: "@Anastasia",
+          lang: "EN",
           img: "",
         },
         {
@@ -142,6 +147,7 @@ export default {
           link: "/nightingale",
           authorUrl: "https://dribbble.com/totodsgn",
           author: "@Thomas Monavon",
+          lang: "EN",
           img: "",
         },
         {
@@ -149,6 +155,7 @@ export default {
           link: "/chatbox",
           authorUrl: "https://dribbble.com/Ankur_007",
           author: "@Ankur Tripathi",
+          lang: "EN",
           img: "",
         },
         {
@@ -156,6 +163,7 @@ export default {
           link: "/japan",
           authorUrl: "https://dribbble.com/malfiksas",
           author: "@nuzarim",
+          lang: "EN",
           img: "",
         },
         {
@@ -163,6 +171,7 @@ export default {
           link: "/music-player",
           authorUrl: "https://dribbble.com/mkcreates",
           author: "@Maksym",
+          lang: "EN",
           img: "",
         },
         {
@@ -170,6 +179,7 @@ export default {
           link: "/liefde",
           authorUrl: "https://dribbble.com/rachel48",
           author: "@Rachelizmarvel",
+          lang: "EN",
           img: "",
         },
         {
@@ -177,6 +187,7 @@ export default {
           link: "/pawfect",
           authorUrl: "https://dribbble.com/ishaank58",
           author: "@Ishaan Kumar",
+          lang: "EN",
           img: "",
         },
         {
@@ -184,6 +195,7 @@ export default {
           link: "/art-world",
           authorUrl: "https://dribbble.com/Zihad-Islam",
           author: "@Zihad Islam",
+          lang: "EN",
           img: "",
         },
         {
@@ -191,6 +203,7 @@ export default {
           link: "/crope",
           authorUrl: "https://dribbble.com/coolbabka",
           author: "@Katerina",
+          lang: "EN",
           img: "",
         },
       ],
@@ -203,29 +216,38 @@ export default {
           title: "The Wander",
           url: "http://52.203.65.107/",
           github: "https://github.com/O-clock-X/projet-astronomie-front",
+          lang: "EN",
+          tags: [bxlReact, symfonyIcon],
           img: "",
         },
         {
           title: "Mon Ancien Portfolio",
           github: "https://github.com/Shishouille/Portfolio",
           url: "https://shirin-boomi.netlify.app/",
+          lang: "EN",
+          tags: [bxlReact],
           img: "",
         },
         {
           title: "Opav - Infos sur l'opéra",
           url: "https://vivalopera.now.sh/",
           github: "https://github.com/Shishouille/opav",
+          lang: "FR",
+          tags: [nextjsIcon],
           img: "",
         },
         {
           title: "WIP - Plateforme Chercheurs-cobayes",
           github: "https://github.com/Shishouille/cobaye-front",
+          lang: "FR",
+          tags: [bxlReact, bxlNodejs],
           img: "",
         },
       ],
     },
   },
   contactForm: {
+    title: "Contact Me !",
     firstname: {
       title: "First Name",
       error: "Your first name is required.",

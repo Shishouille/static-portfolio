@@ -126,6 +126,8 @@ const artWorld = {
 const crope = {
   color: {
     bg: "#14161E",
+    primary: "#CF3E3E",
+    sider: "#080A12",
   },
   fontFamily: {
     text: "'Roboto', sans-serif;",

@@ -131,19 +131,18 @@ const Projects = ({ locale, isVisible }) => {
                           height="1.5em"
                         />
                       ))}
-                  
-                  </div> 
+                    </div>
+                  </div>
+
+                  <a href={card.github}>
+                    <Icon
+                      icon={githubFilled}
+                      color={theme.color.secondary}
+                      height="1.5em"
+                    />
+                  </a>
+                  <a href={card.url}>{card.title}</a>
                 </div>
-                
-                <a href={card.github}>
-                  <Icon
-                    icon={githubFilled}
-                    color={theme.color.secondary}
-                    height="1.5em"
-                  />
-                </a>
-                <a href={card.url}>{card.title}</a>
-              </div>
               </Tilt>
             ))}
           </section>

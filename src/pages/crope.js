@@ -8,8 +8,10 @@ import Sider from "../../src/components/Crope/Sider";
 import Content from "../../src/components/Crope/Content";
 
 const StyledWrapper = styled.div`
-  min-height: 100vh;
-  background: ${theme.color.bg};
+  display: flex;
+  color: white;
+  height: 100vh;
+  font-family: ${theme.fontFamily.text};
 `;
 
 const Crope = () => {
@@ -23,9 +25,7 @@ const Crope = () => {
       </Helmet>
       <StyledWrapper>
         <Sider />
-        <div className="">
-          <Content />
-        </div>
+        <Content />
       </StyledWrapper>
     </>
   );

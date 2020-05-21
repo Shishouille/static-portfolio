@@ -247,6 +247,7 @@ export default {
     },
   },
   contactForm: {
+    title: "N'hésitez pas à me contacter",
     firstname: {
       title: "Prénom",
       error: "Votre prénom est requis.",
