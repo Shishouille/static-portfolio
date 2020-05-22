@@ -79,7 +79,7 @@ const StyledProjects = styled.div`
 `;
 
 const Projects = ({ locale, isVisible }) => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-device-width: 768px)" });
   return (
     <Element name="projects">
       <StyledProjects>

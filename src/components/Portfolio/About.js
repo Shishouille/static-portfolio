@@ -86,6 +86,14 @@ const StyledAbout = styled.article`
       width: 100%;
       margin: 1.5em;
     }
+    .hobbies-content {
+      h4 {
+        font-size: 1em !important;
+      }
+      p {
+        font-size: 1.5em !important;
+      }
+    }
   }
 `;
 

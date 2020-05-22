@@ -87,6 +87,17 @@ const StyledBio = styled.article`
   div {
     width: 50%;
   }
+  @media (max-width: 1024px) {
+    .buttons {
+      justify-content: center;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+      button {
+        margin: 1em 0;
+      }
+    }
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
@@ -97,10 +108,7 @@ const StyledBio = styled.article`
       width: 100%;
       margin: 1.5em;
     }
-    .buttons {
-      justify-content: space-around;
-      width: 100%;
-    }
+    
   }
 `;
 const Bio = ({ locale, fluid }) => {
