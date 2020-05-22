@@ -1,10 +1,22 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { chatBox as theme } from "../../themes";
 import { Icon } from "@iconify/react";
 import arrowRight from "@iconify/icons-cil/arrow-right";
 
 import bot from "../../images/chatbox/bot.png";
+
+const translateLeft = keyframes`
+from { 
+  transform: translate(0,  0); 
+  }
+50% { 
+transform: translate(1em, 0); 
+}
+to { 
+transform: translate(0, 0); 
+}
+`;
 
 const StyledMain = styled.main`
   display: flex;
@@ -46,6 +58,11 @@ const StyledMain = styled.main`
     cursor: pointer;
     position: relative;
     z-index: 1;
+    &:hover {
+      svg {
+         animation: ${translateLeft} .5s infinite;
+      }
+    }
   }
   svg {
     position: absolute;

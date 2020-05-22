@@ -73,7 +73,7 @@ const StyledNavigation = styled.nav`
 `;
 
 const Navigation = () => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-device-width: 768px)" });
   const [isOpen, open] = useState(false);
   return (
     <StyledNavigation>

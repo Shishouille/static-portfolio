@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import styled, { keyframes } from "styled-components";
@@ -14,7 +15,7 @@ const StyledWrapper = styled.div`
   font-family: ${theme.fontFamily.text};
 `;
 
-const Crope = () => {
+const Crope = ({ data }) => {
   return (
     <>
       <Helmet>
@@ -25,10 +26,23 @@ const Crope = () => {
       </Helmet>
       <StyledWrapper>
         <Sider />
-        <Content />
+        <Content fluid={data.file.childImageSharp.fluid} />
       </StyledWrapper>
     </>
   );
 };
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "crope/main.png" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluidLimitPresentationSize
+        }
+      }
+    }
+  }
+`;
 
 export default Crope;

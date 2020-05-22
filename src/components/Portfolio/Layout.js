@@ -20,6 +20,7 @@ to {
   }`;
 
 const GlobalStyle = createGlobalStyle`
+  overflow-x: hidden;
   * {
   scrollbar-width: thin;
   scrollbar-color: ${theme.color.primary};

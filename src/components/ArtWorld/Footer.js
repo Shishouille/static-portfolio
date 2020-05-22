@@ -15,6 +15,7 @@ const StyledFooter = styled.footer`
   }
   ul {
     list-style: none;
+    cursor: pointer;
   }
   .lists {
     display: flex;

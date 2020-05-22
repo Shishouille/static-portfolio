@@ -11,7 +11,8 @@ import mailIcon from "@iconify/icons-feather/mail";
 import messageFilled from "@iconify/icons-ant-design/message-filled";
 import faceSatisfiedFilled from "@iconify/icons-carbon/face-satisfied-filled";
 
-import photo from "../../images/portfolio/avatar.jpeg";
+import Img from "gatsby-image";
+// import photo from "../../images/portfolio/avatar.jpeg";
 import cv from "../../images/portfolio/CV.png";
 
 const StyledBio = styled.article`
@@ -25,7 +26,7 @@ const StyledBio = styled.article`
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
+    .bio-photo {
       box-shadow: 0px 10px 15px 5px rgba(125, 125, 125, 0.75);
       border-radius: 1em;
       width: 50%;
@@ -102,12 +103,12 @@ const StyledBio = styled.article`
     }
   }
 `;
-const Bio = ({ locale }) => {
+const Bio = ({ locale, fluid }) => {
   return (
     <Element name="bio">
       <StyledBio className="animate__animated animate__fadeIn">
         <div className="bio-pic">
-          <img src={photo} alt="" />
+          <Img className="bio-photo" fluid={fluid} alt="" />
         </div>
         <div>
           <section>

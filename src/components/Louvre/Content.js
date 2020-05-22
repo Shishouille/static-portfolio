@@ -15,6 +15,9 @@ const StyledMain = styled.main`
   .nav {
     align-self: center;
     margin: auto 1em;
+    svg {
+      cursor: pointer;
+    }
   }
   h1 {
     font-family: ${theme.fontFamily.title};
@@ -37,9 +40,12 @@ const StyledMain = styled.main`
   }
   footer {
     text-align: end;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
     p {
       position: relative;
-      width: 90%;
+      width: fit-content;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 0.8em;
@@ -56,7 +62,7 @@ const StyledMain = styled.main`
         width: 0;
         height: 0;
         bottom: -38%;
-        right: -2%;
+        right: -9px;
         border-style: solid;
         border-width: 10px 25px 0 0;
         border-color: #000000 transparent transparent transparent;

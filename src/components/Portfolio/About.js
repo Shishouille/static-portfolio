@@ -10,6 +10,7 @@ import womanTeacher from "@iconify/icons-noto/woman-teacher";
 
 const StyledAbout = styled.article`
   background: ${theme.color.primary};
+  overflow-x: hidden;
   min-height: 100vh;
   padding: 2em;
   color: white;

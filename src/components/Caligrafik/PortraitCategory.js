@@ -22,6 +22,30 @@ transform: translate(0, 0);
 }
 `;
 
+const zoomIn = keyframes`
+  from { 
+  transform: scale(1,  1); 
+  }
+  50% {
+    transform: scale(1.1, 1.1); 
+  }
+  to { 
+  transform: scale(1, 1); 
+  }
+`;
+
+const contrast = keyframes`
+  from { 
+    filter: contrast(100%);
+  }
+  50% {
+    filter: contrast(120%);
+  }
+  to { 
+    filter: contrast(100%);
+  }
+`;
+
 const StyledPortrait = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,6 +55,12 @@ const StyledPortrait = styled.div`
   .portrait-img {
     position: relative;
     width: 100%;
+    img {
+      cursor: pointer;
+      &:hover {
+        animation: ${contrast} .5s ease-in-out;
+      }
+    }
     svg {
       position: absolute;
       cursor: pointer;

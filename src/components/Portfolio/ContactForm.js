@@ -10,7 +10,7 @@ import sendAltFilled from "@iconify/icons-carbon/send-alt-filled";
 
 const StyledForm = styled.form`
   width: 80%;
-  margin: auto;
+  margin: 1em auto;
   h2 {
     margin: 1em 0;
     font-size: 2.5em;

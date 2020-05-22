@@ -12,6 +12,9 @@ const StyledNavigation = styled.nav`
     color: grey;
     text-decoration: none;
     margin-right: 2em;
+    &:hover {
+      color: ${theme.color.primary};
+    }
   }
   .active {
     font-weight: bold;

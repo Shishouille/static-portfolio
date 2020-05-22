@@ -53,6 +53,12 @@ from {
 
 const StyledWrapper = styled.div`
   font-family: ${theme.fontFamily.text};
+  h1, h2, h3, h4, p, a, li {
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: ${theme.color.primary};
+    }
+  }
   min-height: 100vh;
   .bg-header {
     background: ${theme.color.bgDark};
@@ -82,6 +88,7 @@ const StyledWrapper = styled.div`
     }
   }
   .button {
+    cursor: pointer;
     background: ${theme.color.primary};
     border-radius: 0.3em;
     color: white;
@@ -90,10 +97,19 @@ const StyledWrapper = styled.div`
     font-weight: bold;
     text-transform: capitalize;
     margin-left: 1em;
+    transition: background .2s ease-in-out;
+    &:hover {
+      background: white;
+      color: ${theme.color.primary};
+    }
   }
   .button--secondary {
     background: white;
     color: ${theme.color.primary};
+    &:hover {
+      background: ${theme.color.primary};
+      color: white;
+    }
   }
   @media (max-width: 768px) {
     padding: 0.5em;

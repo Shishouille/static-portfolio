@@ -2,7 +2,8 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { crope as theme } from "../../themes";
 
-import main from "../../images/crope/main.png";
+import Img from "gatsby-image";
+// import main from "../../images/crope/main.png";
 
 import Navigation from "./Navigation";
 import Main from "./Main";
@@ -15,7 +16,7 @@ const Background = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  img {
+  .main-img {
     object-fit: cover;
     height: 100vh;
     min-width: 40%;
@@ -38,7 +39,7 @@ const StyledContent = styled.div`
   width: 100%;
 `;
 
-const Content = () => {
+const Content = ({ fluid }) => {
   return (
     <StyledContent>
       <main>
@@ -47,7 +48,7 @@ const Content = () => {
       </main>
       <Background>
         <div />
-        <img src={main} alt="" />
+        <Img className="main-img" fluid={fluid} />
       </Background>
     </StyledContent>
   );

@@ -34,7 +34,7 @@ const StyledProjects = styled.div`
     }
     .card-tags {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       svg {
         margin: 0 0.5em;

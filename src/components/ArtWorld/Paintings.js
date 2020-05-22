@@ -49,6 +49,7 @@ const StyledPaintings = styled.div`
 `;
 
 const StyledPainting = styled.section`
+  cursor: pointer;
   text-align: center;
   width: 25%;
   margin: 0 0.5em;

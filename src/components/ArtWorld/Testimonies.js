@@ -18,6 +18,7 @@ const StyledTestimonies = styled.article`
   svg {
     margin-left: 0.5em;
     margin-bottom: 1em;
+    cursor: pointer;
   }
   .carroussel {
     display: flex;
