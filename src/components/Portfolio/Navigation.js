@@ -66,9 +66,12 @@ const StyledMobile = styled.nav`
   svg {
     margin: 1em;
   }
-  nav {
+  menu {
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
     overflow: hidden;
     z-index: 1;
     position: fixed;
@@ -132,7 +135,7 @@ const Navigation = ({ locale }) => {
             </div>
           )}
           {menu && (
-            <nav>
+            <menu>
               <Icon
                 icon={bxsGrid}
                 onClick={() => setMenu(!menu)}
@@ -178,7 +181,7 @@ const Navigation = ({ locale }) => {
               >
                 {locale[4]}
               </Scroll>
-            </nav>
+            </menu>
           )}
         </StyledMobile>
       )}
