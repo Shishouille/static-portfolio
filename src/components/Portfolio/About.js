@@ -40,6 +40,11 @@ const StyledAbout = styled.article`
     text-align: center;
     .hobbies-content {
       margin-top: 2em;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       h4 {
         font-size: 2em;
       }
@@ -87,6 +92,7 @@ const StyledAbout = styled.article`
       margin: 1.5em;
     }
     .hobbies-content {
+      height: auto !important;
       h4 {
         font-size: 1em !important;
       }
