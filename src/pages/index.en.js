@@ -13,10 +13,10 @@ import ContactForm from "../components/Portfolio/ContactForm";
 
 import SEO from "../components/seo";
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout locale={locale.navigation}>
     <SEO title="Shirin Boomi - Front-end Developper" lang="en" />
-    <Bio locale={locale.bio} />
+    <Bio locale={locale.bio} fluid={data.file.childImageSharp.fluid} />
     <TrackVisibility partialVisibility>
       <About locale={locale.about} />
     </TrackVisibility>

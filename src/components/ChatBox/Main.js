@@ -60,7 +60,7 @@ const StyledMain = styled.main`
     z-index: 1;
     &:hover {
       svg {
-         animation: ${translateLeft} .5s infinite;
+        animation: ${translateLeft} 0.5s infinite;
       }
     }
   }

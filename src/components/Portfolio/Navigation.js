@@ -96,7 +96,7 @@ const Navigation = ({ locale }) => {
               <Scroll className="name" to="bio" smooth spy>
                 Shirin Boomi
               </Scroll>
-              <Link activeClassName="is-active" to="/fr">
+              <Link activeClassName="is-active" to="/">
                 FR
               </Link>
               <Link activeClassName="is-active" to="/en">

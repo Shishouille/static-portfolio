@@ -108,7 +108,6 @@ const StyledBio = styled.article`
       width: 100%;
       margin: 1.5em;
     }
-    
   }
 `;
 const Bio = ({ locale, fluid }) => {
@@ -152,13 +151,14 @@ const Bio = ({ locale, fluid }) => {
             <h2>{locale.subtitle}</h2>
             <p>{locale.content}</p>
             <nav className="buttons">
-              <button>
-                <Scroll to="contact" smooth>
+              {" "}
+              <Scroll to="contact" smooth>
+                <button>
                   <InlineIcon icon={messageFilled} hFlip />
                   {locale.button}
-                </Scroll>
-              </button>
-              <a className="cv" href={cv} download>
+                </button>{" "}
+              </Scroll>
+              <a className="cv" href={locale.url} download>
                 <InlineIcon icon={faceSatisfiedFilled} />
                 {locale.cv}
               </a>

@@ -35,10 +35,10 @@ const Calligrafik = () => {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap"
           rel="stylesheet"
         />
-          <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
       </Helmet>
       <StyledWrapper>
         <div className="bg-main">

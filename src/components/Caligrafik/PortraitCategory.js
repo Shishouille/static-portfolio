@@ -58,7 +58,7 @@ const StyledPortrait = styled.div`
     img {
       cursor: pointer;
       &:hover {
-        animation: ${contrast} .5s ease-in-out;
+        animation: ${contrast} 0.5s ease-in-out;
       }
     }
     svg {

@@ -11,6 +11,8 @@ import styledComponents from "@iconify/icons-simple-icons/styled-components";
 import nextjsIcon from "@iconify/icons-logos/nextjs";
 import symfonyIcon from "@iconify/icons-cib/symfony";
 
+import cv from "../images/portfolio/CVE.png";
+
 export default {
   navigation: ["Bio", "About", "What I Do", "Projects", "Contact"],
   bio: {
@@ -19,6 +21,7 @@ export default {
     content: "Specialized in ReactJS.",
     button: "Contact me",
     cv: "Download my Resume",
+    url: cv,
   },
   about: {
     aboutMe: {

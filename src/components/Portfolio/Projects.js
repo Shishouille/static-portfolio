@@ -117,7 +117,7 @@ const Projects = ({ locale, isVisible }) => {
                 <div
                   className={
                     isVisible
-                      ? "card animate__animated animate__fadeInUp"
+                      ? "card animate__animated animate__fadeIn"
                       : "card"
                   }
                 >

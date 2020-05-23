@@ -16,9 +16,9 @@ const StyledFooter = styled.footer`
     display: block;
     margin: 1em 0;
     cursor: pointer;
-    transition: opacity .2s ease;
+    transition: opacity 0.2s ease;
     &:hover {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 `;

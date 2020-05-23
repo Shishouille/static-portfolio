@@ -11,6 +11,8 @@ import styledComponents from "@iconify/icons-simple-icons/styled-components";
 import nextjsIcon from "@iconify/icons-logos/nextjs";
 import symfonyIcon from "@iconify/icons-cib/symfony";
 
+import cv from "../images/portfolio/CV.png";
+
 export default {
   navigation: ["Bio", "A propos", "Ce que je fais", "Projets", "Contact"],
   bio: {
@@ -19,6 +21,7 @@ export default {
     content: "Et j'adore les Délichocs.",
     button: "Contactez-moi",
     cv: "Télécharger mon CV",
+    url: cv,
   },
   about: {
     aboutMe: {

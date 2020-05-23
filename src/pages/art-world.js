@@ -53,8 +53,14 @@ from {
 
 const StyledWrapper = styled.div`
   font-family: ${theme.fontFamily.text};
-  h1, h2, h3, h4, p, a, li {
-    transition: color .2s ease-in-out;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  li {
+    transition: color 0.2s ease-in-out;
     &:hover {
       color: ${theme.color.primary};
     }
@@ -97,7 +103,7 @@ const StyledWrapper = styled.div`
     font-weight: bold;
     text-transform: capitalize;
     margin-left: 1em;
-    transition: background .2s ease-in-out;
+    transition: background 0.2s ease-in-out;
     &:hover {
       background: white;
       color: ${theme.color.primary};
