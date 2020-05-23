@@ -20,7 +20,7 @@ const StyledWID = styled.div`
     align-items: center;
     justify-content: space-around;
     .card {
-      min-height: 20em;
+      min-height: 25em;
       text-align: center;
       border-radius: 0.3em;
       padding: 1.5em 0.5em;
@@ -30,6 +30,7 @@ const StyledWID = styled.div`
       p {
         width: 90%;
         margin: auto;
+        padding: .5em 0;
       }
       .icons-group {
         display: flex;
@@ -50,7 +51,7 @@ const StyledWID = styled.div`
   section {
     background: ${theme.color.primary};
     color: white;
-    width: 30%;
+    width: 33%;
     margin: 1em;
   }
   @media (max-width: 768px) {
@@ -91,7 +92,9 @@ const WhatIDo = ({ locale, isVisible }) => {
                 </div>
                 <h3>{card.title}</h3>
                 <div>
-                  <p>{card.content}</p>
+                  {card.content.map(text => (
+                    <p>{text}</p>
+                  ))}
                 </div>
               </section>
             ))}
@@ -119,7 +122,9 @@ const WhatIDo = ({ locale, isVisible }) => {
                 </div>
                 <h3>{card.title}</h3>
                 <div>
-                  <p>{card.content}</p>
+                  {card.content.map(text => (
+                    <p>{text}</p>
+                  ))}
                 </div>
               </section>
             ))}

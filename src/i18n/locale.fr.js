@@ -10,15 +10,17 @@ import typescriptIcon from "@iconify/icons-cib/typescript";
 import styledComponents from "@iconify/icons-simple-icons/styled-components";
 import nextjsIcon from "@iconify/icons-logos/nextjs";
 import symfonyIcon from "@iconify/icons-cib/symfony";
+import bxlWordpress from "@iconify/icons-bx/bxl-wordpress";
+import bxlJavascript from "@iconify/icons-bx/bxl-javascript";
 
 import cv from "../images/portfolio/CV.png";
 
 export default {
-  navigation: ["Bio", "A propos", "Ce que je fais", "Projets", "Contact"],
+  navigation: ["Bienvenue", "A propos", "Ce que je fais", "Projets", "Contact"],
   bio: {
     title: "Bonjour, je suis Shirin Boomi.",
     subtitle: "Je suis développeuse Front-end.",
-    content: "Et j'adore les Délichocs.",
+    content: "Mon framework préféré : ReactJS.",
     button: "Contactez-moi",
     cv: "Télécharger mon CV",
     url: cv,
@@ -26,13 +28,17 @@ export default {
   about: {
     aboutMe: {
       title: "A propos de moi",
-      content:
-        "Formée à l'école oClock, je suis passionée par le code depuis que je m'y suis baignée. Trouver le petit effet wow! est mon objectif lorsque je fais un site web.",
+      content: [
+        "Je suis une jeune fille de 23 ans qui me suis reconvertie dans le développement web. J'ai quitté mon ancienne vie, étudiante en psychologie préparant son Master, pour trouver une vocation qui me correspondait mieux : le code. Je suis prête à déménager là où il le faudra, tant que le projet me plaît et que c'est une ville où il fait bon y vivre.",
+        "Je cherche maintenant une entreprise prête à accueillir sa nouvelle recrue. Vous avez en face quelqu'un qui adore résoudre des problèmes et les challenges. Etant curieuse, j'adore découvrir de nouvelles choses, mais mon pire ennemi est la routine. Faire tout le temps la même chose, ce n'est pas fait pour moi au long terme.",
+      ],
     },
     whyMe: {
-      title: "Pourquoi moi ?",
-      content:
-        "Après des études en psychologie, j'ai voulu changer de cap en devenant développeuse web ! Ce qui me permet d'avoir la casquette humaine, avec l'empathie, la communication et l'écoute nécessaire en équipe, et la casquette technique, étant super curieuse et toujours à la recherche d'optimisation.",
+      title: "Mais encore ?",
+      content: [
+        "La psychologie est un bagage qui me tient à coeur dans ce nouveau métier. Mais pourquoi avoir quitté cette voie ? Je vous vois venir ! Plus le temps passait, et plus je sentais, surtout lors de mon stage, que notre rôle était de mettre un pansement sur quelqu'un qui s'était fait poignardé. Ce n'était pas suffisant, et je voulais plus agir dans mon quotidien que dans ce métier.",
+        "L'humain reste une de mes passions et je veux y mettre ma pâte car je suis fière des connaissances que j'ai acquis dans ce domaine. Mes études à l'université m'ont appris à devenir autonome, à chercher par moi-même, et à comprendre. Cette ligne de conduite a été appliquée aussi à ma formation de développeur web et je suis toujours dans cette continuité.",
+      ],
     },
     life: {
       studies: [
@@ -82,34 +88,51 @@ export default {
       {
         icons: [bxlReact, reduxIcon],
         title: "Single Page Application",
-        content:
-          "Les SPA, c'est mon dada! Tout au moins, j'adore travailler avec React et React-Redux. Je peux facilement rendre mes compétences transversables sur Angular ou VueJS si besoin.",
+        content: [
+          "ReactJS et Redux sont mes chevaux de bataille. J'adore le système de gestions d'états, assez polyvalent pour ne pas être limité par cette technologie. Couplée à d'autres librairies comme Axios ou React-Router, j'ai pu développer en équipe une application complète niveau front-end : Routing, appels API et UI avec une mise à jour directe des informations.",
+        ],
       },
       {
         icons: [gatsbyIcon, styledComponents],
         title: "JAMStack & Stylisation",
-        content:
-          "J'ai eu l'occasion de travailler avec GatsbyJS et NextJS pour m'améliorer en front-end. Pour rendre un site joli, je me sers de Styled Components majoritairement. Il m'est arrivé de me servir de Tailwind CSS, Bootstrap, ou encore Sass.",
+        content: [
+          "Le concept des JAMStack m'a beaucoup plu : ils ont l'avantage d'avoir la rapidité des sites statiques et sont codés grâce à des frameworks dynamiques. J'ai pu expérimenter GatsbyJS et NextJS pour des projets personnels. J'ai pu pratiqué le routing sur NextJS, les requêtes GraphQL également sur les deux frameworks, et les composantes 'Images' qui permettent un chargement plus agréable grâce aux fragments.",
+          "Pour la stylisation, j'adore Styled-Components et le principe du CSS-in-JS. Leur système de props est très pratique, tout comme les styles globaux ou les keyframes. J'ai aussi pu tester Bootstrap lors de ma formation, et Tailwind CSS, muni de ses plugins (surtout les composants) dans un projet personnel. Pour ce qui est de SaSS, j'en vois souvent, mais à pratiquer plus si l'occasion s'y trouve !",
+          "Qu'importe les outils pour styliser, je fais en sorte qu'il y ait toujours une version desktop et mobile dans mes projets, grâce aux media queries notamment.",
+        ],
       },
       {
         icons: [bxlNodejs, typescriptIcon],
         title: "Nouveaux Horizons",
-        content:
-          "J'aimerais maîtriser ce langage qu'est Javascript. Je m'intéresse au back-end NodeJS pour m'étendre à du fullstack. Je veux également apprendre Typescript pour aiguiser mes compétences avec ReactJS.",
+        content: [
+          "J'aimerais maîtriser un peu plus le back-end Javascript afin de faire du fullstack et développer des applications MERN. Je sais réaliser un CRUD simple avec l'environnement NodeJS, Express et Mongoose. J'aimerais maintenant améliorer la validation et la manipulation de données.",
+          "Typescript étant très à la mode et permettant plus de contrôle et de vérification, j'aimerais le tester prochainement sur ReactJS.",
+        ],
       },
     ],
     secondary: [
       {
+        icons: [bxlWordpress, bxlJavascript],
+        title: "Wordpress & Javascript",
+        content: [
+          " Pendant ma formation, j'ai eu l'occasion de découvrir comment créer un thème Wordpress. Leur Codex est très clair, il y a beaucoup de tutoriels sur le sujet. Donc si l'occasion se présente de repratiquer sur ce framework, j'en suis !",
+          "J'ai également le bagage nécessaire pour créer des sites webs en HTML/PHP, CSS et Javascript, ayant vu les bonnes pratiques pour la création des pages web.",
+        ],
+      },
+      {
         icons: [phpIcon, mysqlIcon],
         title: "Back-End",
-        content:
-          "Je suis à l'aise avec les notions comme MVC (Model-View-Controller), ou POO. Je n'ai pas autant d'expérience en back-end qu'en front-end, mais cela me permet de comprendre comment faire le lien entre ces deux structures si intriquement liées.",
+        content: [
+          "J'ai pu pratiqué sur des challenges la gestion de bases de données avec PHP et MySQL avec le modèle MVC (Model-View-Controller) et la Programmation Orientée Objet (POO). J'ai les bagages nécessaires pour créer un back-end, comprenant les méthodes du CRUD (Create, Read, Update, Delete) et des vérifications de sécurité (Eviter les injections SQL, vérifier les données entrantes du front, filtrer les accès sur certaines pages)...", "Grâce à ces bonnes bases, j'ai pu transverser mes connaissances sur NodeJS à la fin de ma formation pour créer une application fullstack."
+        ],
       },
       {
         icons: [slackCircleFilled, bxlDiscord],
         title: "Travail d'équipe",
-        content:
-          "Slack, Discord, Trello, j'ai pu découvrir les joies du travail d'équipe en remote, et vivre l'expérience d'un développement de projet en groupe.",
+        content: [
+          "Mon école m'a mis en place des sessions de pair programming avec le Liveshare de Visual Studio Code et un projet de fin d'études en groupe pour m'adapter à mon futur environnement de travail. J'ai pu communiquer par Slack, Github, Discord ou Trello.",
+          "Si vous cherchez quelqu'un à accueillir dans votre super team, n'hésitez pas à me contacter pour mieux me connaître. J'adore rencontrer de nouvelles personnes, que ce soit en réel ou virtuel !",
+        ],
       },
     ],
   },

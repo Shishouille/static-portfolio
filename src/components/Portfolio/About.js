@@ -120,11 +120,15 @@ const About = ({ locale, isVisible }) => {
         >
           <section>
             <h2>{locale.aboutMe.title}</h2>
-            <p>{locale.aboutMe.content}</p>
+            {locale.aboutMe.content.map(text => (
+              <p>{text}</p>
+            ))}
           </section>
           <section>
             <h2>{locale.whyMe.title}</h2>
-            <p>{locale.whyMe.content}</p>
+            {locale.whyMe.content.map(text => (
+              <p>{text}</p>
+            ))}
           </section>
         </article>
         <article

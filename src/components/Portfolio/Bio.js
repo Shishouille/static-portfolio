@@ -149,7 +149,7 @@ const Bio = ({ locale, fluid }) => {
           </section>
           <section>
             <h2>{locale.subtitle}</h2>
-            <p>{locale.content}</p>
+            {locale.content}
             <nav className="buttons">
               {" "}
               <Scroll to="contact" smooth>
