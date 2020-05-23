@@ -66,6 +66,15 @@ const StyledMobile = styled.nav`
   svg {
     margin: 1em;
   }
+  a {
+    color: ${theme.color.primary};
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    &:hover {
+      color: ${theme.color.secondary};
+    }
+  }
   menu {
     width: 100vw;
     height: 100vh;
@@ -85,7 +94,7 @@ const StyledMobile = styled.nav`
 `;
 
 const Navigation = ({ locale }) => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   const [menu, setMenu] = useState(false);
   return (
     <>
@@ -136,6 +145,15 @@ const Navigation = ({ locale }) => {
           )}
           {menu && (
             <menu>
+              <div>
+                <Link activeClassName="is-active" to="/">
+                  FR
+                </Link>
+                |
+                <Link activeClassName="is-active" to="/en">
+                  EN
+                </Link>
+              </div>
               <Icon
                 icon={bxsGrid}
                 onClick={() => setMenu(!menu)}

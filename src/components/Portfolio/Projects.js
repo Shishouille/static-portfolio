@@ -69,6 +69,7 @@ const StyledProjects = styled.div`
   @media (max-width: 768px) {
     .card-group {
       flex-direction: column;
+      margin: 0;
       .card {
         height: auto;
         width: 100%;

@@ -25,6 +25,12 @@ const StyledFooter = styled.footer`
       color: ${theme.color.secondary};
     }
   }
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+    .name {
+      font-size: 1em;
+    }
+  }
 `;
 
 const Footer = () => {

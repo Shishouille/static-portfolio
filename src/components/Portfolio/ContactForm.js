@@ -22,6 +22,7 @@ const StyledForm = styled.form`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    padding: 1em;
     width: 100%;
     box-shadow: 0px 10px 15px 5px rgba(0, 20, 90, 0.2);
     textarea {

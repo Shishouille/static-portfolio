@@ -123,7 +123,8 @@ export default {
         icons: [phpIcon, mysqlIcon],
         title: "Back-End",
         content: [
-          "J'ai pu pratiqué sur des challenges la gestion de bases de données avec PHP et MySQL avec le modèle MVC (Model-View-Controller) et la Programmation Orientée Objet (POO). J'ai les bagages nécessaires pour créer un back-end, comprenant les méthodes du CRUD (Create, Read, Update, Delete) et des vérifications de sécurité (Eviter les injections SQL, vérifier les données entrantes du front, filtrer les accès sur certaines pages)...", "Grâce à ces bonnes bases, j'ai pu transverser mes connaissances sur NodeJS à la fin de ma formation pour créer une application fullstack."
+          "J'ai pu pratiqué sur des challenges la gestion de bases de données avec PHP et MySQL avec le modèle MVC (Model-View-Controller) et la Programmation Orientée Objet (POO). J'ai les bagages nécessaires pour créer un back-end, comprenant les méthodes du CRUD (Create, Read, Update, Delete) et des vérifications de sécurité (Eviter les injections SQL, vérifier les données entrantes du front, filtrer les accès sur certaines pages)...",
+          "Grâce à ces bonnes bases, j'ai pu transverser mes connaissances sur NodeJS à la fin de ma formation pour créer une application fullstack.",
         ],
       },
       {

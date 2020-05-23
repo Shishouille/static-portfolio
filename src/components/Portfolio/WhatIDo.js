@@ -30,7 +30,7 @@ const StyledWID = styled.div`
       p {
         width: 90%;
         margin: auto;
-        padding: .5em 0;
+        padding: 0.5em 0;
       }
       .icons-group {
         display: flex;
