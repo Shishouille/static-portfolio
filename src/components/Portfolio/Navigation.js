@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import MediaQuery from "react-responsive";
 import Headroom from "react-headroom";
 import styled, { keyframes } from "styled-components";
 import { portfolio as theme } from "../../themes";
@@ -94,11 +94,10 @@ const StyledMobile = styled.nav`
 `;
 
 const Navigation = ({ locale }) => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   const [menu, setMenu] = useState(false);
   return (
     <>
-      {isBigScreen && (
+      <MediaQuery minDeviceWidth={1024}>
         <Headroom>
           <StyledNavigation className="animate__animated animate__slideInDown">
             <div>
@@ -131,8 +130,8 @@ const Navigation = ({ locale }) => {
             </div>
           </StyledNavigation>
         </Headroom>
-      )}
-      {!isBigScreen && (
+      </MediaQuery>
+      <MediaQuery maxDeviceWidth={1023}>
         <StyledMobile>
           {!menu && (
             <div className="grid-icon">
@@ -202,7 +201,7 @@ const Navigation = ({ locale }) => {
             </menu>
           )}
         </StyledMobile>
-      )}
+      </MediaQuery>
     </>
   );
 };
