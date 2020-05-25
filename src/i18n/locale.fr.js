@@ -58,6 +58,10 @@ export default {
         },
         {
           title: "Hobbies",
+          content: "Podcasts",
+        },
+        {
+          title: "Hobbies",
           content: "Boxe",
         },
         {
