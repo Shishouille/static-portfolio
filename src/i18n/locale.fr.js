@@ -19,7 +19,7 @@ export default {
   navigation: ["Bienvenue", "A propos", "Ce que je fais", "Projets", "Contact"],
   bio: {
     title: "Bonjour, je suis Shirin Boomi.",
-    subtitle: "Je suis développeuse Front-end.",
+    subtitle: "Je suis développeur Front-end.",
     content: "Mon framework préféré : ReactJS.",
     button: "Contactez-moi",
     cv: "Télécharger mon CV",

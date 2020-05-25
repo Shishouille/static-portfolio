@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Shirin Boomi, Développeur front-end`,
+    title: `Shirin Boomi | `,
     description: `Je suis une développeuse front-end en recherche active. Découvrez mon portfolio et mes projets actuels.`,
     author: `Shirin Boomi`,
   },

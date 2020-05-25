@@ -73,7 +73,7 @@ const StyledProjects = styled.div`
       .card {
         height: auto;
         width: 100%;
-        margin: 1em;
+        margin: 1em 0;
       }
     }
   }
