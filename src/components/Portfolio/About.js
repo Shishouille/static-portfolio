@@ -74,7 +74,7 @@ const StyledAbout = styled.article`
   .index {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
   }
   .active {
