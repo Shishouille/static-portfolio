@@ -245,7 +245,7 @@ export default {
       cards: [
         {
           title: "The Wander",
-          url: "http://52.203.65.107/",
+          url: "http://18.209.171.146/",
           github: "https://github.com/O-clock-X/projet-astronomie-front",
           lang: "EN",
           tags: [bxlReact, symfonyIcon],
