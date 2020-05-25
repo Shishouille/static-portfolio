@@ -109,6 +109,7 @@ const StyledBar = styled.div`
   width: 25%;
   cursor: pointer;
   opacity: 0.5;
+  margin: 0 .2em;
 `;
 
 const About = ({ locale, isVisible }) => {
