@@ -37,7 +37,7 @@ export default {
       title: "Mais encore ?",
       content: [
         "La psychologie est un bagage qui me tient à coeur dans ce nouveau métier. Mais pourquoi avoir quitté cette voie ? Je vous vois venir ! Plus le temps passait, et plus je sentais, surtout lors de mon stage, que notre rôle était de mettre un pansement sur quelqu'un qui s'était fait poignardé. Ce n'était pas suffisant, et je voulais plus agir dans mon quotidien que dans ce métier.",
-        "L'humain reste une de mes passions et je veux y mettre ma pâte car je suis fière des connaissances que j'ai acquis dans ce domaine. Mes études à l'université m'ont appris à devenir autonome, à chercher par moi-même, et à comprendre. Cette ligne de conduite a été appliquée aussi à ma formation de développeur web et je suis toujours dans cette continuité.",
+        "L'humain reste une de mes passions et je veux y mettre ma pâte car je suis fière des connaissances que j'ai acquises dans ce domaine. Mes études à l'université m'ont appris à devenir autonome, à chercher par moi-même, et à comprendre. Cette ligne de conduite a été appliquée aussi à ma formation de développeur web et je suis toujours dans cette continuité.",
       ],
     },
     life: {
@@ -93,7 +93,7 @@ export default {
         icons: [bxlReact, reduxIcon],
         title: "Single Page Application",
         content: [
-          "ReactJS et Redux sont mes chevaux de bataille. J'adore le système de gestions d'états, assez polyvalent pour ne pas être limité par cette technologie. Couplée à d'autres librairies comme Axios ou React-Router, j'ai pu développer en équipe une application complète niveau front-end : Routing, appels API et UI avec une mise à jour directe des informations.",
+          "ReactJS et Redux sont mes chevaux de bataille. J'adore le système de gestion d'états, assez polyvalent pour ne pas être limité par cette technologie. Couplée à d'autres librairies comme Axios ou React-Router, j'ai pu développer en équipe une application complète niveau front-end : Routing, appels API et UI avec une mise à jour directe des informations.",
         ],
       },
       {
