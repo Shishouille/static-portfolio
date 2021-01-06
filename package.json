@@ -26,7 +26,7 @@
     "@iconify/icons-uil": "^1.0.12",
     "@iconify/icons-whh": "^1.0.3",
     "aos": "^2.3.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.7",
     "cogo-toast": "^4.2.3",
     "gatsby": "^2.21.21",
